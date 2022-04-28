@@ -2894,7 +2894,7 @@ section article #ubicacion h4 {
         flex-direction: column;
         position: absolute;
         background: black;
-        margin-right: 10rem;
+        margin-right: 12rem;
         margin-top: 21rem;
         visibility: hidden;
     }
@@ -2905,7 +2905,7 @@ section article #ubicacion h4 {
         flex-direction: column;
         position: absolute;
         background: #000000;
-        margin-left: 12rem;
+        margin-left: 14rem;
         margin-top: 3rem;
         visibility: hidden;
     }
@@ -3582,7 +3582,7 @@ section article #ubicacion h4 {
         flex-direction: column;
         position: absolute;
         background: black;
-        margin-right: 10rem;
+        margin-right: 12rem;
         margin-top: 21rem;
         visibility: hidden;
     }
@@ -3593,7 +3593,7 @@ section article #ubicacion h4 {
         flex-direction: column;
         position: absolute;
         background: #000000;
-        margin-left: 13rem;
+        margin-left: 14rem;
         margin-top: 3rem;
         visibility: hidden;
     }
@@ -4092,7 +4092,7 @@ section article #ubicacion h4 {
         flex-direction: column;
         position: absolute;
         background: black;
-        margin-right: 10rem;
+        margin-right: 12rem;
         margin-top: 21rem;
         visibility: hidden;
     }
@@ -4103,7 +4103,7 @@ section article #ubicacion h4 {
         flex-direction: column;
         position: absolute;
         background: #000000;
-        margin-left: 13rem;
+        margin-left: 14rem;
         margin-top: 3rem;
         visibility: hidden;
     }
@@ -4371,13 +4371,13 @@ section article #ubicacion h4 {
         flex-direction: column;
         position: absolute;
         background: black;
-        margin-right: 10rem;
+        margin-right: 12rem;
         margin-top: 21rem;
         visibility: hidden;
     }
     
     .ventanas .submenu-mobile-faq {
-        width: 8rem;
+        width: 6rem;
         display: flex;
         flex-direction: column;
         position: absolute;

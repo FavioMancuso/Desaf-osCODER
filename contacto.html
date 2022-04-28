@@ -9,7 +9,7 @@
     <title>Contacto ADHOC</title>
 
     <style>
-    .hvr-sweep-to-top {
+    .hvr-sweep-to-bottom {
         display: inline-block;
         vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
@@ -21,33 +21,70 @@
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
     }
-.hvr-sweep-to-top:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #2098D1;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
-    color: white;
-}
-.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-}
+    .hvr-sweep-to-bottom:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(220, 20, 60, 0.5);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    
+    .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+
+    .hvr-shutter-out-horizontal {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+            background: #e1e1e1;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;      
+        }
+        .hvr-shutter-out-horizontal:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgb(220, 20, 60, 0.5);
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+        
+        .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
     </style>
 </head>
 <body>
@@ -63,80 +100,82 @@
             <ul>
                 <li class="hvr-sweep-to-top"><a href="index.html">Home</a>
                     <ul class="submenu">
-                        <li><a href="index.html#productos">Productos</a></li>
-                        <li><a href="index.html#mediosdepago">Medios de pago</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="index.html#productos">Productos</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="index.html#mediosdepago">Medios de pago</a></li>
                     </ul>
                 </li>
                 <li class="hvr-sweep-to-top"><a href="nosotros.html">Nosotros</a>
                     <ul class="submenu">
-                        <li><a href="nosotros.html#adhoc">¿Qué es Adhoc?</a></li>
-                        <li><a href="nosotros.html#at-cliente">Atención al cliente</a></li>
-                        <li><a href="nosotros.html#ubicacion">Ubicacion</a></li>
-                        <li><a href="nosotros.html#redes">Redes sociales</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="nosotros.html#adhoc">¿Qué es Adhoc?</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="nosotros.html#at-cliente">Atención al cliente</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="nosotros.html#ubicacion">Ubicacion</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="nosotros.html#redes">Redes sociales</a></li>
                     </ul>
                 </li>
                 <li class="hvr-sweep-to-top"><a href="galeria.html">Galeria</a>
                     <ul class="submenu">
-                        <li><a href="galeria.html#contenedor-alacena">Alacenas</a></li>
-                        <li><a href="galeria.html#contenedor-placard">Placards</a></li>
-                        <li><a href="galeria.html#contenedor-isla">Islas</a></li>
-                        <li><a href="galeria.html#contenedor-escritorio">Escritorios</a></li>
-                        <li><a href="galeria.html#contenedor-escalera">Escaleras</a></li>
-                        <li><a href="galeria.html#contenedor-comoda">Comodas</a></li>
-                        <li><a href="galeria.html#contenedor-barra">Barras</a></li>
-                        <li><a href="galeria.html#contenedor-rack">Racks</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-alacena">Alacenas</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-placard">Placards</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-isla">Islas</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-escritorio">Escritorios</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-escalera">Escaleras</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-comoda">Comodas</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-barra">Barras</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-rack">Racks</a></li>
                     </ul>
                 </li>
                 <li class="hvr-sweep-to-top"><a href="faq.html">FAQs</a>
                     <ul class="submenu">
-                        <li><a href="faq.html#preg">Preguntas frecuentes</a></li>
-                        <li><a href="faq.html#consulta">Realiza tu consulta</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="faq.html#preg">Preguntas frecuentes</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="faq.html#consulta">Realiza tu consulta</a></li>
                     </ul>
                 </li>
                 <li class="hvr-sweep-to-top"><a href="contacto.html">Contacto</a>
                     <ul class="submenu">
-                        <li><a href="contacto.html#inicio">Mi perfil</a></li>
-                        <li><a href="contacto.html#inicio">Agregar cuenta</a></li>
-                        <li><a href="contacto.html#inicio">Ajustes</a></li>
-                        <li><a href="contacto.html#inicio">Notificaciones</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="contacto.html#inicio">Mi perfil</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="contacto.html#inicio">Agregar cuenta</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="contacto.html#inicio">Ajustes</a></li>
+                        <li class="hvr-sweep-to-bottom"><a href="contacto.html#inicio">Notificaciones</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <nav id="menu-mobile">
             <ul class="nav-mobile">
-                <li class="archivo"><a href="contacto.html">Contacto</a>
+                <li class="archivo"><a href="index.html">Home</a>
                     <ul class="nav-mobile nav-mobile__desp">
-                        <li class="ventanas"><a href="index.html">Home</a>
-                            <ul class="submenu-mobile-home">
-                                    <li><a href="index.html#productos">Productos</a></li>
-                                    <li><a href="index.html#mediosdepago">Medios de pago</a></li>
-                            </ul>
-                        </li>
                     <li class="ventanas ventanas__1"><a href="nosotros.html">Nosotros</a>
                         <ul class="submenu-mobile-nosotros">
-                            <li><a href="nosotros.html#adhoc">¿Qué es Adhoc?</a></li>
-                            <li><a href="nosotros.html#at-cliente">Atención al cliente</a></li>
-                            <li><a href="nosotros.html#ubicacion">Ubicacion</a></li>
-                            <li><a href="nosotros.html#redes">Redes sociales</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="nosotros.html#adhoc">¿Qué es Adhoc?</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="nosotros.html#at-cliente">Atención al cliente</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="nosotros.html#ubicacion">Ubicacion</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="nosotros.html#redes">Redes sociales</a></li>
                         </ul>
                     </li>
                     <li class="ventanas ventanas__2"><a href="galeria.html">Galeria</a>
                         <ul class="submenu-mobile-galeria">
-                            <li><a href="galeria.html#contenedor-alacena">Alacenas</a></li>
-                            <li><a href="galeria.html#contenedor-placard">Placards</a></li>
-                            <li><a href="galeria.html#contenedor-isla">Islas</a></li>
-                            <li><a href="galeria.html#contenedor-escritorio">Escritorios</a></li>
-                            <li><a href="galeria.html#contenedor-escalera">Escaleras</a></li>
-                            <li><a href="galeria.html#contenedor-comoda">Comodas</a></li>
-                            <li><a href="galeria.html#contenedor-barra">Barras</a></li>
-                            <li><a href="galeria.html#contenedor-rack">Racks</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-alacena">Alacenas</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-placard">Placards</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-isla">Islas</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-escritorio">Escritorios</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-escalera">Escaleras</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-comoda">Comodas</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-barra">Barras</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-rack">Racks</a></li>
                         </ul>
                     </li>
                     <li class="ventanas"><a href="faq.html">FAQs</a>
                         <ul class="submenu-mobile-faq">
-                            <li><a href="faq.html#preg">Preguntas frecuentes</a></li>
-                            <li><a href="faq.html#consulta">Realiza tu consulta</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="faq.html#preg">Preguntas frecuentes</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="faq.html#consulta">Realiza tu consulta</a></li>
+                        </ul>
+                    </li>
+                    <li class="ventanas"><a href="contacto.html">Contacto</a>
+                        <ul class="submenu-mobile-contacto">
+                            <li class="hvr-shutter-out-horizontal"><a href="contacto.html#inicio">Mi perfil</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="contacto.html#inicio">Agregar cuenta</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="contacto.html#inicio">Ajustes</a></li>
+                            <li class="hvr-shutter-out-horizontal"><a href="contacto.html#inicio">Notificaciones</a></li>
                         </ul>
                     </li>
                     </ul>
