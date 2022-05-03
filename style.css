@@ -14,179 +14,51 @@ header {
     flex-direction: column;
 }
 
-header .encabezado .desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 2rem;
-    width: 100%;
-    padding: 0.375rem;
-    text-align: center;
-    font-size: medium;
-    background-color: black;
+header .container-fluid {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 2.2rem;
+    margin-bottom: 0.65rem;
+}
+
+header .container-fluid h1 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 header .encabezado .desc u {
     color: coral;
 }
 
-header h2 {
-    height: 3rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 0.625rem 1.875rem 0rem 1.875rem;
+.container img {
+    margin-right: 1rem;
 }
 
-header h2 .title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 0.125rem solid black;
-    background-color: crimson;
-    color: black;
-    font-size: xx-large;
-    font-weight: 600;
-    text-align: center;
-    padding: 0.125rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+header .h2 {
+    font-size: 1.2rem;
 }
 
-header h2 .title a {
+header h2 a {
     text-decoration: none;
-    color: black;
-}
-
-header h2 span {
-    color: white
-}
-
-header h2 .login a {
-    text-decoration: none;
-    color: black;
-    font-size: medium;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.login a:hover {
-    color:  crimson;
-}
-
-.login {
-    text-align: right;
-    font-weight: bolder;
-    font-size: medium;
-    line-height: 0.625rem;
-    padding-right: 0.3125rem;
-}
-
-.login a {
-    text-decoration: none;
-    color: black;
+    font-size: large;
+    font-weight: 400;
 }
 
 header {
     height: auto;
-    padding: 0rem 0rem 0.625rem 0rem;
+    padding: 0rem 0rem 0.65rem 0rem;
 }
 
-#menu {
-    width: 59.4rem;
-    height: auto;
-    display: grid;
-    grid-template-rows: repeat(1, 1.5cm);
-    grid-template-columns: repeat(5, 1fr);
-    background-color: black;
-    color: white;
-    align-items: center;
-    margin: 0px auto;
-    margin-top: 0.8rem;
-    font-size: 0.9375rem;
-    font-weight: bold;
+.d-flex {
+    margin-right: 1rem;
 }
 
-
-.home {
-    grid-column: 1/2;
-    grid-row: 1/2;
+#carousel {
+    margin: 0.5rem 7.8rem;
 }
 
-.nosotros {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.galeria {
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-.faq {
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-
-.contacto {
-    grid-column: 5/6;
-    grid-row: 1/2;
-}
-
-ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul li {
-    display: inline-block;
-    position: relative;
-    width: 11.875rem;
-    text-align: center;
-}
-
-nav ul li a {
-    display: block;
-    padding: 0.9375rem 1.25rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #fff;
-    text-decoration: none;
-    
-}
-
-nav ul li a:hover {
-    color: coral;
-    transition: all .3s;
-}
-
-.submenu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background: black;
-    visibility: hidden;
-    z-index: 2;
-}
-
-.submenu li a {
-    display: flex;
-    flex-direction: column;
-    padding: 0.9375rem;    
-    color: #fff;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-nav ul li:hover .submenu { 
-    visibility: visible;
-}
-
-.nav-mobile {
-    display: none;
+.d-block {
+    height: 480px;
 }
 
 #HOME {
@@ -330,7 +202,7 @@ nav ul li:hover .submenu {
 }
 
 .rack figure {
-    background-image: url(img/rack4.jpg);
+    background-image: url(img/rack1.jpg);
     background-size: cover;
     background-position: right;
     transition: all 500ms ease-out;
@@ -394,7 +266,7 @@ nav ul li:hover .submenu {
     align-items: flex-start;
 }
 
-.container{
+.container__card{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     width: 43.75rem;
@@ -409,7 +281,7 @@ nav ul li:hover .submenu {
     padding: 1.875rem;
 }
 
-.container .title {
+.container__card .title {
     font-size: x-large;
     font-weight: 400;
     text-align: center;
@@ -417,7 +289,7 @@ nav ul li:hover .submenu {
     padding-bottom: 1.25rem;
 }
 
-.container .subtitle {
+.container__card .subtitle {
     font-size: medium;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -504,7 +376,7 @@ footer {
     font-size: 1.25rem;
     height: 2.5rem;
     width: 2.5rem;
-    line-height: 2.5rem;
+    line-height: 2.4rem;
     text-align: center;
     color: #fff;
     background: black;
@@ -825,10 +697,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 200px);
     grid-template-rows: repeat(9, 2.7rem);
-    background-color: rgba(0,0,0,0.5);
-    border: 5px crimson solid;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px black;
     color: white;
     text-align: center;
     margin-left: 3.05rem;
@@ -1412,142 +1280,33 @@ section article #ubicacion h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 3rem;
 }
 
-#form .iniciar {
-    height: auto;
-    width: 60%;
-    border: 2px solid white;
-    align-items: center;
-    text-align: center;
-    font-size: larger;
-    padding: 1.5rem;
-    padding-bottom: 0%;
+.form-signin {
+    border: 3px solid white;
+    padding: 2rem 3rem;
     background-color: rgba(0,0,0,0.50);
     border-radius: 15px;
-    box-shadow: 3px 3px 3px white;
+    box-shadow: 3px 3px 3px rgba(0, 102, 255, 0.5);
     margin-bottom: 1.5rem;
 }
 
-#form .iniciar .title, .registrarse .title{
-    color: white;
-    font-size: large;
-    letter-spacing: 7px;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    padding: 1rem;
-    font-weight: 600;
+.h4 {
+    margin: 2rem auto;
 }
 
-#form .formulario {
-    display: inline-block;
-    width: 80%;
-    padding-top: 1.5rem;
-    color: white;
-    text-align: left;
-    font-size: medium;
-    font-weight: 400;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.h4 u {
+    color: rgb(77, 206, 77);
 }
 
-#form .formulario .form__label {
-    display: inline-block;
-    text-align: left;
-    font-weight: 600;
-    color: white;
-}
-
-#form .formulario .form__input {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    padding: 5px;
-    border: none;
-    border-bottom: 4px solid crimson;
-    color: white;
-    background-color: rgba(0,0,0,0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-}
-
-#form .ingresar, #form .registrarse__input{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#form .ingresar .checkbox, #form .tyc .chechbox  {
-    cursor: pointer;
-}
-
-#form .formulario .form__input--sumbit {
-    background-color: rgba(0,0,0,0);
-    border: none;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    font-weight: 600;
-    cursor: pointer;
-} 
-
-#form .formulario .form__input--sumbit:hover {
-    color: crimson;
-}
-
-.line {
-    margin-top: 0.5cm;
-    margin-bottom: 0.5cm;
-    width: 60%;
-    color: #fff;
-}
-
-#form .registrarse {
-    margin-top: 1.5rem;
-    height: auto;
-    width: 60%;
-    border: 2px solid white;
-    align-items: center;
-    text-align: center;
-    font-size: larger;
-    padding: 1.5rem;
-    padding-bottom: 1rem;
+.registro {
+    border: 3px solid white;
+    padding: 2rem 3rem;
     background-color: rgba(0,0,0,0.50);
     border-radius: 15px;
-    box-shadow: 3px 3px 3px white;
-}
-
-#form .registrarse__input .tyc{
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: center;
-}
-
-#form .tyc .checkbox {
-    font-size: medium;
-}
-
-#form .registrarse .form__select {
-    width: 100%;
-    margin-top: 1rem;
+    box-shadow: 3px 3px 3px rgb(0, 102, 255, 0.5);
     margin-bottom: 1.5rem;
-    padding: 5px;
-    border: none;
-    border: 4px solid crimson;
-    color: white;
-    background-color: rgba(0,0,0,0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-}
-
-#form .registrarse .form__option {
-    background-color: black;
-    color: white;
-}
-
-#form .ingresar .ingresar__input .form__input--sumbit{
-    font-size: medium;
 }
 
 /* faq */
@@ -1656,6 +1415,15 @@ section article #ubicacion h4 {
         width: 11rem;
     }
     
+    #carousel {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .d-block {
+        height: 450px;
+    }
+
     #HOME .navegacion p {
         font-size: large;
     }
@@ -1732,14 +1500,14 @@ section article #ubicacion h4 {
         width: 20rem;
 
     }
-    .container {
+    .container__card {
         margin-top: 2.5rem;
         margin-bottom: 2rem;
         width: 35.75rem;
         height: 22.125rem;
     }
 
-    .container .title {
+    .container__card .title {
         font-size: 1.2rem;
         font-weight: 400;
     } 
@@ -1989,31 +1757,14 @@ section article #ubicacion h4 {
 
 }
 
-@media only screen and (max-width: 905px) {
-    header .encabezado .desc {
-        font-size: 0.9rem;
-    }    
-    
-    .login {
-        font-size: 0.8rem;
+@media only screen and (max-width: 905px) {    
+    .d-block {
+    height: 450px;
     }
 
-    header h2 .title {
-        font-size: x-large;
-    }
-
-    header #menu{
-        width: 45rem;
-    }
-    
-    header #menu ul{
-        width: 45rem;
-        align-items: center;
-    }
-
-    header #menu .submenu{
-        width: 9rem;
-        font-size: 0.8rem;
+    #carousel {
+        margin-left: 6.5rem;
+        margin-right: 6.5rem;
     }
     
     .nav-galeria .nav-galeria--menu {
@@ -2145,25 +1896,17 @@ section article #ubicacion h4 {
 }
 
 @media only screen and (max-width: 768px) {
-    header .encabezado .desc{
-        font-size: small;
+    header .container-fluid h1 {
+        font-size: 0.9rem;
     }
 
-    header #menu{
-        width: 40rem;
-    }
+    .d-block {
+        height: 450px;
+        }
     
-    header #menu ul{
-        width: 40rem;
-        align-items: center;
-    }
-
-    header #menu .submenu{
-        width: 8rem;
-    }
-
-    header h2 .title{
-        font-size: x-large;
+    #carousel {
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
     }
     
     #HOME .navegacion p {
@@ -2235,19 +1978,19 @@ section article #ubicacion h4 {
         width: 17rem;
     }
     
-    .container {
+    .container__card {
         margin-top: 2.5rem;
         margin-bottom: 2rem;
         width: 35.75rem;
         height: 22.125rem;
     }
 
-    .container .title {
+    .container__card .title {
         font-size: 1.2rem;
         font-weight: 400;
     }
     
-    .container .subtitle {
+    .container__card .subtitle {
         font-size: 1rem;
         font-weight: 300;
     }
@@ -2597,26 +2340,13 @@ section article #ubicacion h4 {
 }
 
 @media only screen and (max-width: 660px) {
-    header h2 {
-        justify-content: space-between;
+    .d-block {
+        height: 380px;
     }
     
-    header h2 .login a {
-        font-size: 0.9rem;
-    }
-    header #menu{
-        width: 35rem;
-        font-size: 0.8rem;
-    }
-
-    header #menu .submenu{
-        width: 7rem;
-        font-size: 0.7rem;
-    }
-    
-    header #menu ul{
-        width: 35rem;
-        align-items: center;
+    #carousel {
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
     }
 
     #HOME {
@@ -2646,18 +2376,18 @@ section article #ubicacion h4 {
         align-items: flex-start;
     }
     
-    .container{
+    .container__card {
         margin-top: 2rem;
         width: 27.75rem;
         height: 22.125rem;
     }
     
-    .container .title {
+    .container__card .title {
         font-size: large;
         font-weight: 300;
     }
     
-    .container .subtitle {
+    .container__card .subtitle {
         font-size: small;
         font-weight: 200;
     }
@@ -2886,32 +2616,17 @@ section article #ubicacion h4 {
 }
 
 @media only screen and (max-width: 580px) {
-    header .encabezado .desc{
-        font-size: small;
-        padding-top: 0.5rem;
-    }
-
-    header h2 .title {
-        font-size: 1.5rem;
-    }
-
-    header h2 .login a{
-        font-size: 0.9rem;
-    }
-
-    header #menu{
-        width: 31rem;
+    header .container-fluid h1 {
         font-size: 0.8rem;
     }
 
-    header #menu .submenu{
-        width: 6.2rem;
-        font-size: 0.6rem;
+    .d-block {
+        height: 380px;
     }
     
-    header #menu ul{
-        width: 31rem;
-        align-items: center;
+    #carousel {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .nav-galeria .nav-galeria--menu {
@@ -3042,169 +2757,17 @@ section article #ubicacion h4 {
 }
 
 @media only screen and (max-width: 480px) {
-    header .encabezado .desc{
-        font-size: x-small;
-        padding-top: 0.5rem;
+    header .container-fluid h1 {
+        font-size: 0.7rem;
     }
 
-    header h2 {
-        height: 3rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 0.625rem 1rem 0rem 1rem;
-    }
-
-    header h2 .title {
-        font-size: 1.4rem;
-    }
-
-    header h2 .login a{
-        font-size: 0.8rem;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .nav-mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .d-block {
+        height: 320px;
     }
     
-    .nav-mobile .archivo {
-        width: 6rem;
-        height: 2rem;
-        padding-top: 0.3rem;
-        margin: 0.5rem auto;
-        margin-bottom: 0rem;
-        font-weight: 700;
-        list-style: none;
-        text-align: center;
-        background-color: black;
-    }
-    
-    .nav-mobile .archivo a {
-        text-decoration: none;
-        color: white;
-        font-size: 0.8rem;
-    }
-    
-    .nav-mobile__desp {
-        display: block;
-        background: black;
-        list-style: none;
-        margin-top: 0.4rem;
-        padding-bottom: 0rem;
-        width: 6rem;
-    }
-    
-    .nav-mobile__desp li {
-        width: auto;
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;;
-        font-weight: 600;
-        list-style: none;
-        background-color: black;
-    }
-    
-    .nav-mobile__desp {
-        visibility: hidden;
-    }
-    
-    .nav-mobile a:hover {
-        color: coral;
-        text-decoration: underline;
-        transition: all .3s;
-    }
-    
-    .nav-mobile li:hover > .nav-mobile__desp {
-        visibility: visible;
-        position: absolute;
-    }
-    
-    .ventanas {
-        display: inline-block;
-        position: relative;
-        text-align: left;
-    }
-    
-    .nav-mobile li a {
-        display: inline;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .submenu-mobile-contacto li a {
-        display: inline;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    .ventanas .submenu-mobile-home {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-left: 12rem;
-        margin-top: 3rem;
-        visibility: hidden;
-    }
-
-    .ventanas .submenu-mobile-nosotros {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-left: 12rem;
-        margin-top: 9rem;
-        visibility: hidden;
-    }
-    
-    .ventanas .submenu-mobile-galeria {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-right: 12rem;
-        margin-top: 21rem;
-        visibility: hidden;
-    }
-    
-    .ventanas .submenu-mobile-faq {
-        width: 8rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: #000000;
-        margin-left: 14rem;
-        margin-top: 3rem;
-        visibility: hidden;
-    }
-
-    .ventanas .submenu-mobile-contacto {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-right: 12rem;
-        margin-top: 9rem;
-        visibility: hidden;
-    }
-    
-    .nav-mobile__desp .ventanas:hover > .submenu-mobile-home, .nav-mobile__desp .ventanas:hover > .submenu-mobile-nosotros, .nav-mobile__desp .ventanas:hover > .submenu-mobile-galeria, .nav-mobile__desp .ventanas:hover > .submenu-mobile-faq, .nav-mobile__desp .ventanas:hover > .submenu-mobile-contacto {
-        visibility: visible;
-        position: absolute;
+    #carousel {
+        margin-left: .75rem;
+        margin-right: .75rem;
     }
 
     #HOME .navegacion p {
@@ -3291,18 +2854,18 @@ section article #ubicacion h4 {
         align-items: flex-start;
     }
     
-    .container{
+    .container__card {
         margin-top: 2rem;
         width: 25.75rem;
         height: 21.125rem;
     }
     
-    .container .title {
+    .container__card .title {
         font-size: 0.9rem;
         font-weight: 200;
     }
     
-    .container .subtitle {
+    .container__card .subtitle {
         font-size: small;
         font-weight: 200;
     }
@@ -3741,205 +3304,21 @@ section article #ubicacion h4 {
 }
 
 @media only screen and (max-width: 420px) {
-    header .encabezado .desc{
-        font-size: x-small;
-        padding-top: 0.5rem;
-    }
-
-    header h2 {
+    header .container-fluid {
         height: 3rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 0.625rem 1rem 0rem 1rem;
     }
-
-    header h2 .title {
-        font-size: 1.1rem;
-    }
-
-    header h2 .login a{
+    
+    header .container-fluid h1 {
         font-size: 0.7rem;
     }
 
-    .nav-mobile .archivo {
-        width: 6rem;
-        height: 2rem;
-        padding-top: 0.3rem;
-        margin: 0.5rem auto;
-        margin-bottom: 0rem;
-        font-weight: 700;
-        list-style: none;
-        text-align: center;
-        background-color: black;
+    .d-block {
+        height: 330px;
     }
     
-    .nav-mobile .archivo a {
-        text-decoration: none;
-        color: white;
-        font-size: 0.7rem;
-    }
-    
-    .nav-mobile__desp {
-        display: block;
-        background: black;
-        list-style: none;
-        margin-top: 0.4rem;
-        padding-bottom: 0rem;
-        width: 6rem;
-    }
-    
-    .nav-mobile__desp li {
-        width: auto;
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;;
-        font-weight: 600;
-        list-style: none;
-        background-color: black;
-    }
-    
-    .nav-mobile__desp {
-        visibility: hidden;
-    }
-    
-    .nav-mobile a:hover {
-        color: coral;
-        text-decoration: underline;
-        transition: all .3s;
-    }
-    
-    .nav-mobile li:hover > .nav-mobile__desp {
-        visibility: visible;
-        position: absolute;
-    }
-    
-    .ventanas {
-        display: inline-block;
-        position: relative;
-        text-align: left;
-    }
-    
-    .nav-mobile li a {
-        display: inline;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .submenu-mobile-contacto li a {
-        display: inline;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    .ventanas .submenu-mobile-home {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-left: 12rem;
-        margin-top: 3rem;
-        visibility: hidden;
-    }
-
-    .ventanas .submenu-mobile-nosotros {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-left: 12rem;
-        margin-top: 9rem;
-        visibility: hidden;
-    }
-    
-    .ventanas .submenu-mobile-galeria {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-right: 12rem;
-        margin-top: 21rem;
-        visibility: hidden;
-    }
-    
-    .ventanas .submenu-mobile-faq {
-        width: 8rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: #000000;
-        margin-left: 14rem;
-        margin-top: 3rem;
-        visibility: hidden;
-    }
-
-    .ventanas .submenu-mobile-contacto {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-right: 12rem;
-        margin-top: 9rem;
-        visibility: hidden;
-    }
-
-    .cards{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    
-    .container{
-        margin-top: 2rem;
-        width: 21.75rem;
-        height: 24.125rem;
-    }
-    
-    .container .title {
-        font-size: 0.9rem;
-        font-weight: 200;
-    }
-    
-    .container .subtitle {
-        font-size: small;
-        font-weight: 200;
-    }
-    
-    .usuario{
-        width: 100%;
-        margin-right: 2.5rem;
-    }
-
-    .selection {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .selection select{
-        font-size: 0.6rem;
-        margin-bottom: 0.2rem;
-    }
-    
-    .cards a{
-        float: right;
-        padding-top: 1rem;
-        font-size: small;
-    }
-    
-    .tarjetas img{
-        align-items: flex-end;
-        width: 3rem;
-        padding-top: 0.4rem;
+    #carousel {
+        margin-left: .75rem;
+        margin-right: .75rem;
     }
 
     #nosotros nav {
@@ -4251,181 +3630,25 @@ section article #ubicacion h4 {
 }
 
 @media only screen and (max-width: 380px) {
-    header .encabezado .desc{
-        font-size: 0.6rem;
-        padding-top: 0.5rem;
-    }
-
-    header h2 {
+    header .container-fluid {
         height: 3rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 0.625rem 1rem 0rem 1rem;
     }
-
-    header h2 .title {
-        font-size: 1rem;
-    }
-
-    header h2 .login a{
+    
+    header .container-fluid h1 {
         font-size: 0.7rem;
     }
 
-    .nav-mobile .archivo {
-        width: 6rem;
-        height: 2rem;
-        padding-top: 0.3rem;
-        margin: 0.5rem auto;
-        margin-bottom: 0rem;
-        font-weight: 700;
-        list-style: none;
-        text-align: center;
-        background-color: black;
+    .d-block {
+        height: 250px;
     }
     
-    .nav-mobile .archivo a {
-        text-decoration: none;
-        color: white;
-        font-size: 0.7rem;
-    }
-    
-    .nav-mobile__desp {
-        display: block;
-        background: black;
-        list-style: none;
-        margin-top: 0.4rem;
-        padding-bottom: 0rem;
-        width: 6rem;
-    }
-    
-    .nav-mobile__desp li {
-        width: auto;
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;;
-        font-weight: 600;
-        list-style: none;
-        background-color: black;
-    }
-    
-    .nav-mobile__desp {
-        visibility: hidden;
-    }
-    
-    .nav-mobile a:hover {
-        color: coral;
-        text-decoration: underline;
-        transition: all .3s;
-    }
-    
-    .nav-mobile li:hover > .nav-mobile__desp {
-        visibility: visible;
-        position: absolute;
-    }
-    
-    .ventanas {
-        display: inline-block;
-        position: relative;
-        text-align: left;
-    }
-    
-    .nav-mobile li a {
-        display: inline;
-        color: #fff;
-        text-decoration: none;
+    #carousel {
+        margin-left: .75rem;
+        margin-right: .75rem;
     }
 
-    .submenu-mobile-contacto li a {
-        display: inline;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    .ventanas .submenu-mobile-home {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-left: 12rem;
-        margin-top: 3rem;
-        visibility: hidden;
-    }
-
-    .ventanas .submenu-mobile-nosotros {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-left: 12rem;
-        margin-top: 9rem;
-        visibility: hidden;
-    }
-    
-    .ventanas .submenu-mobile-galeria {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-right: 12rem;
-        margin-top: 21rem;
-        visibility: hidden;
-    }
-    
-    .ventanas .submenu-mobile-faq {
-        width: 8rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: #000000;
-        margin-left: 14rem;
-        margin-top: 3rem;
-        visibility: hidden;
-    }
-
-    .ventanas .submenu-mobile-contacto {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-right: 12rem;
-        margin-top: 9rem;
-        visibility: hidden;
-    }
-
-    .nav-galeria .nav-galeria--menu {
-        width: auto;
+    header {
         height: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        background-color: rgba(0,0,0,0.5);
-        border: 2px crimson solid;
-        box-shadow: 0.25rem 0.25rem 0.25rem black;
-        color: white;
-        text-align: center;
-        margin: 1rem;
-        font-size: 0.6rem;
-    }
-
-    .nav-galeria .fa-chevron-up {
-        border: 2px solid crimson;
-        border-radius: 50%;
-        text-decoration: none;
-        text-align: center;
-        color: white;
-        font-size: 0.6rem;
-        font-weight: 100;
-        height: 20px;
-        width: 20px;
-        padding-top: 0.1rem;
     }
 
     #HOME .navegacion p {
@@ -4523,160 +3746,12 @@ section article #ubicacion h4 {
 }
 
 @media only screen and (max-width: 320px) {
-    header .encabezado .desc{
-        height: auto;
-        font-size: 0.6rem;
-        padding: 0.5rem 1.8rem 0.5rem 1.8rem;
-        margin-bottom: 0.5rem;
-    }
-
-    header {
-        height: 9rem;
-    }
-    header h2 {
+    header .container-fluid {
         height: 3rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        padding: 0.625rem 1rem 0rem 1rem;
     }
-
-    header h2 .title {
-        font-size: 1rem;
-    }
-
-    header h2 .login{
-        padding-top: 0.5rem;
+    
+    header .container-fluid h1 {
         font-size: 0.7rem;
-    }
-
-    .nav-mobile .archivo {
-        width: 6rem;
-        height: 2rem;
-        padding-top: 0.3rem;
-        margin: 0.5rem auto;
-        margin-bottom: 0rem;
-        font-weight: 700;
-        list-style: none;
-        text-align: center;
-        background-color: black;
-    }
-    
-    .nav-mobile .archivo a {
-        text-decoration: none;
-        color: white;
-        font-size: 0.7rem;
-    }
-    
-    .nav-mobile__desp {
-        display: block;
-        background: black;
-        list-style: none;
-        margin-top: 0.4rem;
-        padding-bottom: 0rem;
-        width: 6rem;
-    }
-    
-    .nav-mobile__desp li {
-        width: auto;
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;;
-        font-weight: 600;
-        list-style: none;
-        background-color: black;
-    }
-    
-    .nav-mobile__desp {
-        visibility: hidden;
-    }
-    
-    .nav-mobile a:hover {
-        color: coral;
-        text-decoration: underline;
-        transition: all .3s;
-    }
-    
-    .nav-mobile li:hover > .nav-mobile__desp {
-        visibility: visible;
-        position: absolute;
-    }
-    
-    .ventanas {
-        display: inline-block;
-        position: relative;
-        text-align: left;
-    }
-    
-    .nav-mobile li a {
-        display: inline;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .submenu-mobile-contacto li a {
-        display: inline;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    .ventanas .submenu-mobile-home {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-left: 12rem;
-        margin-top: 3rem;
-        visibility: hidden;
-    }
-
-    .ventanas .submenu-mobile-nosotros {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-left: 12rem;
-        margin-top: 9rem;
-        visibility: hidden;
-    }
-    
-    .ventanas .submenu-mobile-galeria {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-right: 12rem;
-        margin-top: 21rem;
-        visibility: hidden;
-    }
-    
-    .ventanas .submenu-mobile-faq {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: #000000;
-        margin-left: 12rem;
-        margin-top: 3rem;
-        visibility: hidden;
-    }
-
-    .ventanas .submenu-mobile-contacto {
-        width: 6rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        margin-right: 12rem;
-        margin-top: 9rem;
-        visibility: hidden;
     }
 
     .nav-galeria .nav-galeria--menu {
@@ -4774,18 +3849,18 @@ section article #ubicacion h4 {
         align-items: flex-start;
     }
     
-    .container{
+    .container__card {
         margin-top: 2rem;
         width: 17rem;
         height: 22rem;
     }
     
-    .container .title {
+    .container__card .title {
         font-size: small;
         font-weight: 300;
     }
     
-    .container .subtitle {
+    .container__card .subtitle {
         font-size: x-small;
         font-weight: 200;
     }

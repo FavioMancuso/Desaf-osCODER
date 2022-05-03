@@ -4,108 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home ADHOC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home ADHOC</title>
 </head>
 <body>
     <header>
+        <div class="container-fluid bg-dark">
         <h1 class="encabezado">
-            <p class="desc"><i>10% de descuento + Envío gratis <u>ABONANDO EN EFECTIVO</u></i></p>
+            <p class="desc fw-bold text-center"><i>10% de descuento + Envío gratis <u>ABONANDO EN EFECTIVO</u></i></p>
         </h1>
-        <h2>
-            <p class="login"><a href="">Iniciar sesión</a> | <a href="">Registrate</a></p>
-            <p class="title"><a href="index.html">ADHOC <span>muebles</span></a></p>
-        </h2>
-        <nav id="menu">
-            <ul>
-                <li><a class="hvr-bounce-in" href="index.html">Home</a>
-                    <ul class="submenu">
-                        <li class="hvr-sweep-to-bottom"><a href="index.html#productos">Productos</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="index.html#mediosdepago">Medios de pago</a></li>
-                    </ul>
-                </li>
-                <li><a class="hvr-bounce-in" href="nosotros.html">Nosotros</a>
-                    <ul class="submenu">
-                        <li class="hvr-sweep-to-bottom"><a href="nosotros.html#adhoc">¿Qué es Adhoc?</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="nosotros.html#at-cliente">Atención al cliente</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="nosotros.html#ubicacion">Ubicacion</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="nosotros.html#redes">Redes sociales</a></li>
-                    </ul>
-                </li>
-                <li><a class="hvr-bounce-in" href="galeria.html">Galeria</a>
-                    <ul class="submenu">
-                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-alacena">Alacenas</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-placard">Placards</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-isla">Islas</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-escritorio">Escritorios</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-escalera">Escaleras</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-comoda">Comodas</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-barra">Barras</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="galeria.html#contenedor-rack">Racks</a></li>
-                    </ul>
-                </li>
-                <li><a class="hvr-bounce-in" href="faq.html">FAQs</a>
-                    <ul class="submenu">
-                        <li class="hvr-sweep-to-bottom"><a href="faq.html#preg">Preguntas frecuentes</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="faq.html#consulta">Realiza tu consulta</a></li>
-                    </ul>
-                </li>
-                <li><a class="hvr-bounce-in" href="contacto.html">Contacto</a>
-                    <ul class="submenu">
-                        <li class="hvr-sweep-to-bottom"><a href="contacto.html#inicio">Mi perfil</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="contacto.html#inicio">Agregar cuenta</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="contacto.html#inicio">Ajustes</a></li>
-                        <li class="hvr-sweep-to-bottom"><a href="contacto.html#inicio">Notificaciones</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <nav id="menu-mobile">
-            <ul class="nav-mobile">
-                <li class="archivo"><a href="index.html">Home</a>
-                    <ul class="nav-mobile nav-mobile__desp">
-                    <li class="ventanas ventanas__1"><a href="nosotros.html">Nosotros</a>
-                        <ul class="submenu-mobile-nosotros">
-                            <li class="hvr-shutter-out-horizontal"><a href="nosotros.html#adhoc">¿Qué es Adhoc?</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="nosotros.html#at-cliente">Atención al cliente</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="nosotros.html#ubicacion">Ubicacion</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="nosotros.html#redes">Redes sociales</a></li>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a href="index.html"><img src="img/adhoc-logo.jpg" alt="" width="120px" height="90px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 fw-bold" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="nosotros.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nosotros
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="nosotros.html#adhoc">¿Qué es Adhoc?</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html#at-cliente">Atencione al cliente</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html#ubicacion">Ubicación</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html#redes">Redes sociales</a></li>
                         </ul>
                     </li>
-                    <li class="ventanas ventanas__2"><a href="galeria.html">Galeria</a>
-                        <ul class="submenu-mobile-galeria">
-                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-alacena">Alacenas</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-placard">Placards</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-isla">Islas</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-escritorio">Escritorios</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-escalera">Escaleras</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-comoda">Comodas</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-barra">Barras</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="galeria.html#contenedor-rack">Racks</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="galeria.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Galería
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="galeria.html">Escritorio</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Placard</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Alacena</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Isla</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Escalera</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Comoda</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Barra</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Rack</a></li>
                         </ul>
                     </li>
-                    <li class="ventanas"><a href="faq.html">FAQs</a>
-                        <ul class="submenu-mobile-faq">
-                            <li class="hvr-shutter-out-horizontal"><a href="faq.html#preg">Preguntas frecuentes</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="faq.html#consulta">Realiza tu consulta</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="faq.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        FAQs
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="faq.html">Preguntas frecuentes</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Realiza tu consulta</a></li>
                         </ul>
                     </li>
-                    <li class="ventanas"><a href="contacto.html">Contacto</a>
-                        <ul class="submenu-mobile-contacto">
-                            <li class="hvr-shutter-out-horizontal"><a href="contacto.html#inicio">Mi perfil</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="contacto.html#inicio">Agregar cuenta</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="contacto.html#inicio">Ajustes</a></li>
-                            <li class="hvr-shutter-out-horizontal"><a href="contacto.html#inicio">Notificaciones</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="contacto.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contacto
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="contacto.html">Mi perfil</a></li>
+                            <li><a class="dropdown-item" href="contacto.html">Agregar cuenta</a></li>
+                            <li><a class="dropdown-item" href="contacto.html">Ajustes</a></li>
+                            <li><a class="dropdown-item" href="contacto.html">Notificaciones</a></li>
                         </ul>
                     </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                </ul>
+                <form class="d-flex">
+                    <h2 class="h2 text-white"><a class="a text-white" href="contacto.html">Iniciar sesión</a> | <a class="a text-white" href="contacto.html">Registrate</a></h2>
+                </form>
+                </div>
+                </div>
+            </nav>
+        </div>
     </header>    
     <main id="HOME">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/alacena3.jpg" class="d-block w-100" alt="adhocmuebles">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/placard2.jpg" class="d-block w-100" alt="adhocmuebles">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/isla2.jpg" class="d-block w-100" alt="adhocmuebles">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <nav class="navegacion">
             <p id="productos">PRODUCTOS</p>
         </nav>
@@ -182,83 +183,18 @@
                 </figure>
             </article>
         </section>
-        <nav class="navegacion">
-            <p id="mediosdepago">MEDIOS DE PAGO</p>
-        </nav>
-        <section class="cards">
-            <div class="container">
-                <p class="title">Confirma tu pago con Tarjeta</p>
-                <div class="primerfila">
-                    <div class="usuario">
-                        <p class="subtitle">Usuario</p>
-                        <div class="input-campo">
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="cvv">
-                        <p class="subtitle">CVV</p>
-                        <div class="input-campo">
-                            <input type="password">
-                        </div>
-                    </div>
-                </div>    
-                <div class="segundafila">
-                    <div class="num-tarjeta">
-                        <p class="subtitle">Numero de Tarjera</p>
-                        <div class="input-campo">
-                            <input type="number">
-                        </div>
-                    </div>
-                </div>
-                <div class="tercerfila">
-                    <div class="num-tarjeta">
-                        <p class="subtitle">Numero de Tarjera</p>
-                        <div class="selection">
-                            <div class="date">
-                                <select name="months" id="months">
-                                    <option value="Ene">Ene</option>
-                                    <option value="Feb">Feb</option>
-                                    <option value="Mar">Mar</option>
-                                    <option value="Abr">Abr</option>
-                                    <option value="May">May</option>
-                                    <option value="Jun">Jun</option>
-                                    <option value="Jul">Jul</option>
-                                    <option value="Ago">Ago</option>
-                                    <option value="Sep">Sep</option>
-                                    <option value="Oct">Oct</option>
-                                    <option value="Nov">Nov</option>
-                                    <option value="Dic">Dic</option>
-                                </select>
-                                <select name="years" id="years">
-                                    <option value="2027">2027</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2024">2024</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2022">2022</option>
-                                </select>
-                            </div>
-                            <div class="tarjetas">
-                                <img src="img/mc.png" alt="mastercard">
-                                <img src="img/pp.png" alt="paypal">
-                                <img src="img/vi.png" alt="visa">
-                            </div>
-                        </div>
-                    </div>
-                    <a class="hvr-underline-from-center" href="">Confirmar</a>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
         <section class="buttons-redes">
-            <a href="#" class="fa fa-facebook-square"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin-square"></a>
-            <a href="#" class="fa fa-whatsapp"></a>
-            <a href="#" class="fa fa-map-marker"></a>
-            <a href="#" class="fa fa-phone"></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-geo-alt-fill"></i></a>
+            <a href="#"><i class="bi bi-telephone-fill"></i></a>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
