@@ -1500,27 +1500,6 @@ section article #ubicacion h4 {
         width: 20rem;
 
     }
-    .container__card {
-        margin-top: 2.5rem;
-        margin-bottom: 2rem;
-        width: 35.75rem;
-        height: 22.125rem;
-    }
-
-    .container__card .title {
-        font-size: 1.2rem;
-        font-weight: 400;
-    } 
-    
-    .container .subtitle {
-        font-size: 1rem;
-        font-weight: 300;
-    }
-
-    .cards {
-        width: 100%;
-        height: auto;
-    }
 
     #nosotros nav {
         color: white;
@@ -1610,151 +1589,6 @@ section article #ubicacion h4 {
         align-items: center;
         padding: 40px;
     }
-    
-    #form .iniciar {
-        height: auto;
-        width: 60%;
-        border: 2px solid white;
-        align-items: center;
-        text-align: center;
-        font-size: larger;
-        padding: 1.5rem;
-        padding-bottom: 0%;
-        background-color: rgba(0,0,0,0.50);
-        border-radius: 15px;
-        box-shadow: 3px 3px 3px white;
-        margin-bottom: 1.5rem;
-    }
-    
-    #form .iniciar .title, .registrarse .title{
-        color: white;
-        font-size: large;
-        letter-spacing: 7px;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        padding: 1rem;
-        font-weight: 600;
-    }
-    
-    #form .formulario {
-        display: inline-block;
-        width: 80%;
-        padding-top: 1.5rem;
-        color: white;
-        text-align: left;
-        font-size: medium;
-        font-weight: 400;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    #form .formulario .form__label {
-        display: inline-block;
-        text-align: left;
-        font-weight: 600;
-        color: white;
-    }
-    
-    #form .formulario .form__input {
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-        padding: 5px;
-        border: none;
-        border-bottom: 4px solid crimson;
-        color: white;
-        background-color: rgba(0,0,0,0);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-    }
-    
-    #form .ingresar, #form .registrarse__input{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    #form .ingresar .checkbox, #form .tyc .chechbox  {
-        cursor: pointer;
-    }
-    
-    #form .formulario .form__input--sumbit {
-        background-color: rgba(0,0,0,0);
-        border: none;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: medium;
-        font-weight: 600;
-        cursor: pointer;
-    } 
-    
-    #form .formulario .form__input--sumbit:hover {
-        color: crimson;
-    }
-    
-    .line {
-        margin-top: 0.5cm;
-        margin-bottom: 0.5cm;
-        width: 60%;
-        color: #fff;
-    }
-    
-    #form .registrarse {
-        margin-top: 1.5rem;
-        height: auto;
-        width: 60%;
-        border: 2px solid white;
-        align-items: center;
-        text-align: center;
-        font-size: larger;
-        padding: 1.5rem;
-        padding-bottom: 1rem;
-        background-color: rgba(0,0,0,0.50);
-        border-radius: 15px;
-        box-shadow: 3px 3px 3px white;
-    }
-    
-    #form .ingresar {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #form .tyc .checkbox {
-        padding: 2rem auto;
-        font-size: medium;
-    }
-    
-    #form .registrarse .form__select {
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-        padding: 5px;
-        border: none;
-        border: 4px solid crimson;
-        color: white;
-        background-color: rgba(0,0,0,0);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-    }
-    
-    #form .registrarse .form__option {
-        background-color: black;
-        color: white;
-    }
-    
-    #form .ingresar .ingresar__input {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 38rem;
-    }
-
-    #form .ingresar .ingresar__input .form__input--sumbit{
-        font-size: 0.9rem;
-        margin: 1rem auto;
-    }
-
 }
 
 @media only screen and (max-width: 905px) {    
@@ -1773,10 +1607,6 @@ section article #ubicacion h4 {
         display: grid;
         grid-template-columns: repeat(1, 10rem);
         grid-template-rows: repeat(9, 3rem);
-        background-color: rgba(0,0,0,0.5);
-        border: 5px crimson solid;
-        border-radius: 0.625rem;
-        box-shadow: 0.25rem 0.25rem 0.25rem black;
         color: white;
         text-align: center;
         margin-left: 3rem;
@@ -1978,41 +1808,12 @@ section article #ubicacion h4 {
         width: 17rem;
     }
     
-    .container__card {
-        margin-top: 2.5rem;
-        margin-bottom: 2rem;
-        width: 35.75rem;
-        height: 22.125rem;
-    }
-
-    .container__card .title {
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-    
-    .container__card .subtitle {
-        font-size: 1rem;
-        font-weight: 300;
-    }
-
-    .cards {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
     .nav-galeria .nav-galeria--menu {
         width: auto;
         height: auto;
         display: grid;
         grid-template-columns: repeat(1, 10rem);
         grid-template-rows: repeat(9, 3rem);
-        background-color: rgba(0,0,0,0.5);
-        border: 5px crimson solid;
-        border-radius: 0.625rem;
-        box-shadow: 0.25rem 0.25rem 0.25rem black;
         color: white;
         text-align: center;
         margin-left: 3rem;
@@ -2368,61 +2169,12 @@ section article #ubicacion h4 {
         width: 14rem;
     }
     
-    .cards{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    
-    .container__card {
-        margin-top: 2rem;
-        width: 27.75rem;
-        height: 22.125rem;
-    }
-    
-    .container__card .title {
-        font-size: large;
-        font-weight: 300;
-    }
-    
-    .container__card .subtitle {
-        font-size: small;
-        font-weight: 200;
-    }
-        
-    .usuario{
-        width: 100%;
-        margin-right: 2.5rem;
-    }
-    
-    .cards a{
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-top: 2rem;
-        font-size: 0.9375rem;
-        transition: 0.5s;
-        float: right;
-    }
-    
-    .tarjetas img{
-        width: 3.25rem;
-    }
-
     .nav-galeria .nav-galeria--menu {
         width: auto;
         height: auto;
         display: grid;
         grid-template-columns: repeat(1, 8rem);
         grid-template-rows: repeat(9, 3rem);
-        background-color: rgba(0,0,0,0.5);
-        border: 5px crimson solid;
-        border-radius: 0.625rem;
-        box-shadow: 0.25rem 0.25rem 0.25rem black;
         color: white;
         text-align: center;
         margin-left: 3rem;
@@ -2635,13 +2387,9 @@ section article #ubicacion h4 {
         display: grid;
         grid-template-columns: repeat(1, 7rem);
         grid-template-rows: repeat(9, 2.9rem);
-        background-color: rgba(0,0,0,0.5);
-        border: 5px crimson solid;
-        border-radius: 0.625rem;
-        box-shadow: 0.25rem 0.25rem 0.25rem black;
         color: white;
         text-align: center;
-        margin-left: 3rem;
+        margin-left: 1rem;
         margin-top: 1rem;
         font-size: 0.9rem;
         font-weight: bold;
@@ -2845,50 +2593,7 @@ section article #ubicacion h4 {
         height: 16rem;
         width: 16rem;
     }
-
-    .cards{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
     
-    .container__card {
-        margin-top: 2rem;
-        width: 25.75rem;
-        height: 21.125rem;
-    }
-    
-    .container__card .title {
-        font-size: 0.9rem;
-        font-weight: 200;
-    }
-    
-    .container__card .subtitle {
-        font-size: small;
-        font-weight: 200;
-    }
-        
-    .usuario{
-        width: 100%;
-        margin-right: 2.5rem;
-    }
-
-    .selection select{
-        font-size: 0.7rem;
-    }
-    
-    .cards a{
-        float: right;
-        padding-top: 1rem;
-    }
-    
-    .tarjetas img{
-        width: 3rem;
-        padding-top: 0.2rem;
-    }
-
     #galeria {
         display: flex;
         flex-direction: column;
@@ -2900,12 +2605,10 @@ section article #ubicacion h4 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        background-color: rgba(0,0,0,0.5);
-        border: 2px crimson solid;
-        box-shadow: 0.25rem 0.25rem 0.25rem black;
         color: white;
         text-align: center;
         margin: 1rem;
+        margin-right: 3.5rem;
     }
     
     .item {
@@ -2960,7 +2663,7 @@ section article #ubicacion h4 {
 
     .nav-galeria {
         position: sticky;
-        top: 3.65cm;
+        top: 4.2cm;
     }
 
     #galeria #contenedor-escritorio, #galeria #contenedor-placard, #galeria #contenedor-alacena, #galeria #contenedor-isla, #galeria #contenedor-escalera, #galeria #contenedor-comoda, #galeria #contenedor-barra, #galeria #contenedor-rack {
@@ -3732,16 +3435,17 @@ section article #ubicacion h4 {
         width: 15rem;
     }
 
-    #form .ingresar .ingresar__input {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 15rem;
-    }
-
-    #form .ingresar .ingresar__input .form__input--sumbit{
+    .nav-galeria .nav-galeria--menu {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        color: white;
+        text-align: center;
+        margin: 1rem;
+        margin-right: 3.5rem;
         font-size: 0.7rem;
-        margin: 1rem auto;
     }
 }
 
@@ -3760,27 +3464,14 @@ section article #ubicacion h4 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        background-color: rgba(0,0,0,0.5);
-        border: 2px crimson solid;
-        box-shadow: 0.25rem 0.25rem 0.25rem black;
         color: white;
         text-align: center;
         margin: 1rem;
-        font-size: 0.6rem;
+        margin-left: 0.5rem;
+        margin-right: 3.5rem;
+        font-size: 0.7rem;
     }
 
-    .nav-galeria .fa-chevron-up {
-        border: 2px solid crimson;
-        border-radius: 50%;
-        text-decoration: none;
-        text-align: center;
-        color: white;
-        font-size: 0.6rem;
-        font-weight: 100;
-        height: 20px;
-        width: 20px;
-        padding-top: 0.1rem;
-    }
 
     #galeria #contenedor-escritorio, #galeria #contenedor-placard, #galeria #contenedor-alacena, #galeria #contenedor-isla, #galeria #contenedor-escalera, #galeria #contenedor-comoda, #galeria #contenedor-barra, #galeria #contenedor-rack {
         display: grid;
