@@ -72,8 +72,8 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <h2 class="h2 text-white"><a class="a text-white" href="contacto.html">Iniciar sesión</a> | <a class="a text-white" href="contacto.html">Registrate</a></h2>
+                <form id="login" class="d-flex">
+                    <h2 class="h2"><a href="contacto.html">Iniciar sesión</a> | <a href="contacto.html">Registrate</a></h2>
                 </form>
                 </div>
                 </div>
@@ -81,54 +81,72 @@
         </div>
     </header>
     <main id="nosotros">
-        <nav>
-            <h3><i class="principal">Diseño y confección de muebles a medida</i>
-                <ul type="square" class="subprincipal">
-                    <li>Creamos y recreamos experiencias</li>
-                    <li>Recreamos espacios</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Experiencia y preparación</li>
+        <nav class="d-flex flex-column bd-highlight mb-1 align-items-center align-content-center">
+            <section class="d-flex flex-column align-content-center">
+                <h3 class="p-3 bd-highlight"><i class="principal">Diseño y confección de muebles a medida</i>
+                    <ul type="square" class="d-flex flex-column">
+                        <li class="p-2">Creamos y recreamos experiencias</li>
+                        <li class="p-2">Recreamos espacios</li>
+                        <li class="p-2">Trabajo en equipo</li>
+                        <li class="p-2">Experiencia y preparación</li>
+                    </ul>
+                </h3>
+                <h3 id="adhoc" class="p-3 bd-highlight"><i class="principal">ADHOC nace de reunir lo que utilizamos para realizar cada uno de nunestros proyectos:</i>
+                <ul type="square" class="d-flex flex-column">
+                    <li class="p-2">Adaptación/Arquitectura</li>
+                    <li class="p-2">Diseño/Detalle</li>
+                    <li class="p-2">Habitabilidad</li>
+                    <li class="p-2">Optimización</li>
+                    <li class="p-2">Calidad</li>
                 </ul>
             </h3>
-            <h3 id="adhoc"><i class="principal">ADHOC nace de reunir lo que utilizamos para realizar cada uno de nunestros proyectos:</i>
-                <ul>
-                    <li>Adaptación/Arquitectura</li>
-                    <li>Diseño/Detalle</li>
-                    <li>Habitabilidad</li>
-                    <li>Optimización</li>
-                    <li>Calidad</li>
-                </ul>
-            </h3>
+            </section>
             <h3 class="definicion"><i>Además <a href="https://es.wikipedia.org/wiki/Ad_hoc" target="_blank">ad hoc</a> también tiene su significado. Hace click y conoce más!</i></h3>
         </nav>
-        <section class="sec-nosotros">
-            <article id="at-cliente" class="at-cliente"><h4><u>Atención al cliente</u><br><br>Horarios de atención<br><br></h4>
-            <table class="tabla" border="2">
-                <tr>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miercoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                </tr>
-                <tr>
-                    <td>09:00 a 12:00</td>
-                    <td>09:00 a 12:00</td>
-                    <td>10:00 a 18:00</td>
-                    <td>10 a 18:00</td>
-                    <td>09:00 a 12:00</td>
-                </tr>
-            </table>
+        <div class="container">
+            <section class="sec-nosotros">
+                <h5><u>Atención al cliente:</u> horarios de atención</h5>
+                <article id="at-cliente" class="at-cliente">
+                    <table class="table table-bordered">
+                        <thead class="table-dark table-bordered">
+                            <tr>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miercoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody class="table-info">
+                            <tr>
+                                <td>09:00 <br>a <br>12:00</td>
+                                <td>09:00 <br>a <br>12:00</td>
+                                <td>10:00 <br>a <br>18:00</td>
+                                <td>10:00 <br>a <br>18:00</td>
+                                <td>09:00 <br>a <br>12:00</td>
+                            </tr>
+                        </tbody>
+                        
+                        <tfoot class="table-warning">
+                            <tr scope="row">
+                                <td colspan="5">También realiza tu consulta a través de nuestras <a class="redes" href="#redes">Redes</a>
+                                    <i class="bi bi-whatsapp"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-facebook"></i>
+                                </td>
+                            </tr>
+                        </tfoot>
+                </table>
             </article>
-            <article>
-                <div id="ubicacion"><h4>Conocé nuestro lugar de trabajo: ¿Como llegar?</h4>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.030174212758!2d-58.830076185306496!3d-34.7800156743535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcebff35fe3ae3%3A0x38a4f655ed21d7e0!2sAv.%20Buenos%20Aires%2C%20Marcos%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648437042411!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+            <article class="d-flex flex-column align-items-center" id="ubicacion">
+                <h5 class="h5 p-3 text-center"><u>Conocé nuestro lugar de trabajo:</u> ¿Como llegar?</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.030174212758!2d-58.830076185306496!3d-34.7800156743535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcebff35fe3ae3%3A0x38a4f655ed21d7e0!2sAv.%20Buenos%20Aires%2C%20Marcos%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648437042411!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </section>
+        </div>
     </main>
-    <hr>
-    <footer>
+    <footer id="redes">
         <section class="buttons-redes">
             <a href="#"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-facebook"></i></a>

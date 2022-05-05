@@ -36,12 +36,14 @@ header .encabezado .desc u {
 
 header .h2 {
     font-size: 1.2rem;
+    color: white;
 }
 
 header h2 a {
     text-decoration: none;
     font-size: large;
     font-weight: 400;
+    color: white;
 }
 
 header {
@@ -49,12 +51,16 @@ header {
     padding: 0rem 0rem 0.65rem 0rem;
 }
 
-.d-flex {
+#login {
     margin-right: 1rem;
 }
 
+header h2 a:hover {
+    color: coral;
+}
+
 #carousel {
-    margin: 0.5rem 7.8rem;
+    margin: 0.5rem 7.3rem;
 }
 
 .d-block {
@@ -253,107 +259,6 @@ header {
     margin: auto;
 }
 
-#mediosdepago {
-    margin-top: 2rem;
-    height: 1.5625rem;
-}
-
-.cards{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.container__card{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    width: 43.75rem;
-    height: 23.125rem;
-    border: 0.0625rem solid;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    padding: 0.625rem;
-    color: #fff;
-    justify-content: center;
-    padding: 1.875rem;
-}
-
-.container__card .title {
-    font-size: x-large;
-    font-weight: 400;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-bottom: 1.25rem;
-}
-
-.container__card .subtitle {
-    font-size: medium;
-    font-weight: 300;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
-    padding-bottom: 0.625rem;
-    padding-top: 0.625rem;
-}
-
-.primerfila{
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-}
-
-.usuario{
-    width: 100%;
-    margin-right: 2.5rem;
-}
-
-.input-campo{
-    border: 0.125rem solid crimson;
-}
-
-.input-campo input{
-    width: 100%;
-    border:none;
-    outline: none;
-    padding: 0.625rem;
-    background-color: rgba(0,0,0,0);
-    color: crimson;
-}
-
-.selection{
-    display: flex;
-    justify-content: space-between;
-}
-
-.selection select{
-    padding: 0.625rem 1.25rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(0,0,0,0);
-    color: crimson;
-    border: 0.125rem solid crimson;
-}
-
-.cards a{
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0rem;
-    font-size: 0.9375rem;
-    transition: 0.5s;
-}
-
-.cards a:hover{
-    color: crimson;
-    transition: 0.5s;
-}
-
-.tarjetas img{
-    width: 6.25rem;
-}
 
 footer {
     background-image: url(./img/fondo3.jpg);
@@ -388,293 +293,6 @@ footer {
 .buttons-redes a:hover {
     transform: scale(1.2);
 }
-
-.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-}
-
-.hvr-sweep-to-bottom {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-.hvr-sweep-to-bottom:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(220, 20, 60, 0.5);
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-}
-
-.hvr-underline-from-center {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-}
-.hvr-underline-from-center:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 51%;
-    right: 51%;
-    bottom: 0;
-    background: crimson;
-    height: 0.1rem;
-    -webkit-transition-property: left, right;
-    transition-property: left, right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-    left: 0;
-    right: 0;
-}
-
-.hvr-shutter-out-horizontal {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    background: #e1e1e1;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;      
-}
-.hvr-shutter-out-horizontal:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgb(220, 20, 60, 0.5);
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 50%;
-    transform-origin: 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.hvr-sweep-to-bottom {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        position: relative;
-        -webkit-transition-property: color;
-        transition-property: color;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-    }
-
-.hvr-sweep-to-bottom:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(220, 20, 60, 0.5);
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    }
-    
-    .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1);
-    }
-
-    .hvr-shutter-out-horizontal {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        position: relative;
-        background: #e1e1e1;
-        -webkit-transition-property: color;
-        transition-property: color;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;      
-    }
-    .hvr-shutter-out-horizontal:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgb(220, 20, 60, 0.5);
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: 50%;
-        transform-origin: 50%;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
-    
-    .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-    }
-    .hvr-sweep-to-bottom {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        position: relative;
-        -webkit-transition-property: color;
-        transition-property: color;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-    }
-    
-    .hvr-sweep-to-bottom:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgb(220, 20, 60, 0.5);
-        -webkit-transform: scaleY(0);
-        transform: scaleY(0);
-        -webkit-transform-origin: 50% 0;
-        transform-origin: 50% 0;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
-        
-    .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1);
-    }
-    
-    .hvr-shutter-out-horizontal {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        position: relative;
-        background: #e1e1e1;
-        -webkit-transition-property: color;
-        transition-property: color;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;      
-    }
-    
-    .hvr-shutter-out-horizontal:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgb(220, 20, 60, 0.5);
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: 50%;
-        transform-origin: 50%;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
-
-    .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-    }        
-
-    .hvr-bounce-in {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-transition-duration: 0.5s;
-        transition-duration: 0.5s;
-    }
-    
-    .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-        -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    }
-
-
 
 /* galeria */
 
@@ -831,9 +449,8 @@ footer {
 }
 
 #contenedor-escritorio .item, #contenedor-placard .item, #contenedor-alacena .item, #contenedor-isla .item, #contenedor-escalera .item, #contenedor-comoda .item, #contenedor-barra .item, #contenedor-rack .item {
-    border: 5px crimson solid;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px black;
+    border: 4px coral solid;
+    box-shadow: 4px 4px 4px gray;
 }
 
 #esc1 {
@@ -1137,85 +754,68 @@ footer {
     background-size: cover;
 }
 
-.hr {
-    margin-top: 0.9cm;
-    margin-bottom: 0.4cm;
-    width: 84%;
-    margin-left: 3.05cm;
-    color: #fff;
-}
-
-
 /* nosotros */
 
 #nosotros {
     height: auto;
     width: 100%;
     background-image: url(./img/fondo6.jpg);
+    padding-bottom: 3rem;
 }
 
 #nosotros nav {
     color: white;
-    height: 25cm;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    height: auto;
+    padding: 3rem;
 }
 
 #nosotros nav h3{
     height: auto;
-    width: 13cm;
-    background-color: crimson;
+    width: 25rem;
+    background-color: rgba(0,0,0,0.5);
     text-align: center;
-    padding-top: 15px;
     border: 2px solid white;
-    box-shadow: 5px 5px 5px gray;
-    border-radius: 15px;
+    box-shadow: 4px 4px 4px gray;
+    border-radius: 10px;
+    margin-bottom: 3rem;
 }
 
 #nosotros nav h3 .principal {
-    font-size: x-large;
-    font-weight: 800;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: coral;
     text-decoration: underline;
     text-transform: uppercase;
+    letter-spacing: 0.05rem;
 }
 
 #nosotros nav h3 ul {
-    display: flex;
-    flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size: medium;
     align-items: center;
-    padding-top: 30px;
-
+    padding-top: 1.3rem;
 }
 
-#nosotros nav h3 ul li {
-    padding-bottom: 30px;
-    width: auto;
-}
 
 #nosotros nav .definicion{
     width: auto;
     border: 2px solid white;
     border-radius: 0%;
-    background-color: black;
+    background-color: rgba(0,0,0,0.5);
     padding: 15px;
     font-size: large;
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     color: white;
+    margin-bottom: 0;
 }
 
 #nosotros nav .definicion a {
     text-decoration: none;
     color: coral;
+    font-weight: 600;
 }
 
 .sec-nosotros{
@@ -1225,49 +825,32 @@ footer {
     align-items: center;
     height: auto;
     width: auto;
-    padding: 15px;
+}
+
+.sec-nosotros h5 {
+    color: white;
+    text-transform: uppercase;
 }
 section .at-cliente {
     height: auto;
     width: auto;
-    padding: 20px;
-    border: 2px solid white;    
+    margin: .5rem auto;
+    padding: .5rem;    
     text-align: center;
     color: #fff;
-    background-color: black;
-    box-shadow: 5px 5px 5px gray;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
 }
 
-section .at-cliente .tabla {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: black;
-    background-color: crimson;
-    width: auto;
-    justify-content: center;
-    font-size: medium;
+.redes {
+    text-decoration: none;
+    color: crimson;
 }
 
-section article #ubicacion {
-    height: auto;
-    width: auto;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    padding: 10px;
-    border: 2px solid white;    
-    text-align: center;
-    color: #fff;
-    background-color: black;
-    box-shadow: 5px 5px 5px gray;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-}
-
-section article #ubicacion h4 {
-    padding-bottom: 10px;
+.redes:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    color: crimson;
 }
 
 /* contacto */
@@ -1330,7 +913,6 @@ section article #ubicacion h4 {
     align-items: center;
     padding: 20px;
     border: 2px solid black;
-    border-radius: 15px;
     background-color: rgb(255, 255, 255, 0.5);
     margin: 1.5rem auto;
 }
@@ -1341,13 +923,13 @@ section article #ubicacion h4 {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: crimson;
+    color: coral;
     text-shadow: 2px 2px 2px black;
     padding-bottom: 10px;
 }
 
 #faq .preguntas .preg {
-    font-size: 15px;
+    font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     color: black;
@@ -1356,13 +938,13 @@ section article #ubicacion h4 {
 }
 
 #faq .preguntas .resp {
-    border: solid 5px crimson;
+    border: solid 4px coral;
     background-color: rgba(0,0,0,0.5);
     box-shadow: 5px 5px 5px white;
     padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
-    color: black;
+    color: white;
 }
 
 #faq .consulta .consul {
@@ -1376,7 +958,7 @@ section article #ubicacion h4 {
     margin: 10px;
     padding: 10px;
     border: none;
-    border: 5px solid crimson;
+    border: 4px solid coral;
     box-shadow: 5px 5px 5px white;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1396,7 +978,8 @@ section article #ubicacion h4 {
 }
 
 #faq .consulta .consul-enviar:hover {
-    color: crimson;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 /* MEDIA QUERRRYS */
@@ -1498,85 +1081,6 @@ section article #ubicacion h4 {
     .escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
         height: 20rem;
         width: 20rem;
-
-    }
-
-    #nosotros nav {
-        color: white;
-        height: 55rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nosotros nav h3 {
-        height: auto;
-        width: 35rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
-    }
-
-    #nosotros nav h3 .principal {
-        font-size: 1.3rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
-    }
-
-    #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 1rem;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
-        font-size: 1rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
-    }
-
-    section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 1.1rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 1rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 1rem;
-    }
-
-    section article #ubicacion h4 {
-        padding: 15px;
-        font-size: 1rem;
-    }
-
-    #ubicacion iframe {
-        padding: 1rem;
-        height: 22rem;
-        width: 30rem;
     }
 
     #form {
@@ -1643,84 +1147,6 @@ section article #ubicacion h4 {
         width: 84%;
         margin-left: 3.05rem;
         color: #fff;
-    }
-
-    #nosotros nav {
-        color: white;
-        height: 55rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nosotros nav h3 {
-        height: auto;
-        width: 30rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
-    }
-
-    #nosotros nav h3 .principal {
-        font-size: large;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
-    }
-
-    #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 0.9rem;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
-        font-size: 1rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
-    }
-
-    section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 1.1rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 0.9rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 0.95rem;
-    }
-
-    section article #ubicacion h4 {
-        padding: 15px;
-        font-size: 0.9rem;
-    }
-
-    #ubicacion iframe {
-        padding: 1rem;
-        height: 19rem;
-        width: 27rem;
     }
 
 }
@@ -1845,90 +1271,13 @@ section article #ubicacion h4 {
         padding-block-end: 0cm;
     }
 
-    .hr {
-        margin-top: 0.9cm;
-        margin-bottom: 0.4cm;
-        width: 80%;
-        margin-left: 3.05rem;
-        color: #fff;
-    }
-
-    #nosotros nav {
-        color: white;
-        height: 55rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nosotros nav h3 {
-        height: auto;
-        width: 28rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
-    }
-
-    #nosotros nav h3 .principal {
-        font-size: 1.1rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
-    }
-
-    #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 0.9rem;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
-        font-size: 1rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
-    }
-
-    section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 1.3rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 1rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 0.9rem;
-    }
-
-    section article #ubicacion h4 {
-        padding: 15px;
+    .sec-nosotros table {
         font-size: 0.8rem;
     }
 
     #ubicacion iframe {
-        padding: 1rem;
-        height: 17rem;
-        width: 25rem;
+        height: 25rem;
+        width: 34.375rem;
     }
 
     #faq .preguntas, #faq .consulta {
@@ -1939,7 +1288,6 @@ section article #ubicacion h4 {
         align-items: center;
         padding: 20px;
         border: 2px solid black;
-        border-radius: 15px;
         background-color: rgb(255, 255, 255, 0.5);
         margin: 1.5rem auto;
     }
@@ -1950,7 +1298,7 @@ section article #ubicacion h4 {
         font-weight: 600;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: crimson;
+        color: coral;
         text-shadow: 2px 2px 2px black;
         padding-bottom: 10px;
         font-size: 1.1rem;
@@ -1963,16 +1311,17 @@ section article #ubicacion h4 {
         color: black;
         padding-top: 30px;
         padding-bottom: 30px;
+        text-align: center;
     }
     
     #faq .preguntas .resp {
-        border: solid 5px crimson;
+        border: solid 4px coral;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 5px 5px 5px white;
+        box-shadow: 4px 4px 4px white;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: medium;
-        color: black;
+        font-size: 0.9rem;
+        color: white;
     }
     
     #faq .consulta .consul {
@@ -1980,14 +1329,14 @@ section article #ubicacion h4 {
     }
     
     #faq .consulta .consul .consul-textarea {
-        width: 11cm;
+        width: 10cm;
         background-color: rgba(0,0,0,0.5);
         color: white;
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 5px solid crimson;
-        box-shadow: 5px 5px 5px white;
+        border: 4px solid coral;
+        box-shadow: 4px 4px 4px white;
         font-size: medium;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -2005,138 +1354,42 @@ section article #ubicacion h4 {
         cursor: pointer;
     }
 
-    #form .iniciar .title, .registrarse .title{
-        color: white;
-        font-size: medium;
-        letter-spacing: 7px;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        padding: 1rem;
-        font-weight: 600;
-    }
-    
-    #form .formulario {
-        display: inline-block;
-        width: 80%;
-        padding-top: 1.5rem;
-        color: white;
-        text-align: left;
-        font-size: 0.8rem;
-        font-weight: 400;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    #form .formulario .form__label {
-        display: inline-block;
-        text-align: left;
-        font-weight: 600;
-        color: white;
-    }
-    
-    #form .formulario .form__input {
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-        padding: 5px;
-        border: none;
-        border-bottom: 4px solid crimson;
-        color: white;
-        background-color: rgba(0,0,0,0);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.8rem;
-    }
-    
-    #form .ingresar, #form .registrarse__input{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    #form .ingresar .checkbox, #form .tyc .chechbox  {
-        cursor: pointer;
-    }
-    
-    #form .formulario .form__input--sumbit {
-        background-color: rgba(0,0,0,0);
-        border: none;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.9rem;
-        font-weight: 600;
-        cursor: pointer;
-    } 
-    
-    #form .formulario .form__input--sumbit:hover {
-        color: crimson;
-    }
-    
-    .line {
-        margin-top: 0.5cm;
-        margin-bottom: 0.5cm;
-        width: 60%;
-        color: #fff;
-    }
-    
-    #form .registrarse {
-        margin-top: 1.5rem;
+    #form {
         height: auto;
-        width: 60%;
-        border: 2px solid white;
-        align-items: center;
-        text-align: center;
-        font-size: medium;
-        padding: 1.5rem;
-        padding-bottom: 1rem;
-        background-color: rgba(0,0,0,0.50);
-        border-radius: 15px;
-        box-shadow: 3px 3px 3px white;
-    }
-    
-    #form .registrarse__input .tyc{
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items: center;
-    }
-    
-    #form .tyc .checkbox {
-        font-size: small;
-    }
-    
-    #form .registrarse .form__select {
         width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-        padding: 5px;
-        border: none;
-        border: 4px solid crimson;
-        color: white;
-        background-color: rgba(0,0,0,0);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.8rem;
-    }
-    
-    #form .registrarse .form__option {
-        background-color: black;
-        color: white;
-    }
-    
-    #form .ingresar .ingresar__input .form__input--sumbit{
-        font-size: small;
-    }
-
-    #form .ingresar .ingresar__input {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 24rem;
-    }
-
-    #form .ingresar {
+        background-image: url(./img/fondo6.jpg);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        padding: 3rem;
+    }
+    
+    .form-signin {
+        border: 3px solid white;
+        padding: 2rem 3rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgba(0, 102, 255, 0.5);
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .h4 {
+        margin: 2rem auto;
+    }
+    
+    .h4 u {
+        color: rgb(77, 206, 77);
+    }
+    
+    .registro {
+        border: 3px solid white;
+        padding: 2rem 3rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgb(0, 102, 255, 0.5);
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -2206,90 +1459,13 @@ section article #ubicacion h4 {
         padding-block-end: 0cm;
     }
 
-    .hr {
-        margin-top: 1cm;
-        margin-bottom: 0cm;
-        width: 76%;
-        margin-left: 3.05rem;
-        color: #fff;
-    }
-
-    #nosotros nav {
-        color: white;
-        height: 55rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nosotros nav h3 {
-        height: auto;
-        width: 25rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
-    }
-
-    #nosotros nav h3 .principal {
-        font-size: 1rem;
-        font-weight: 600;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
-    }
-
-    #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 0.8rem;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
-        font-size: 0.9rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
-    }
-
-    section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 1.1rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 0.9rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 0.8rem;
-    }
-
-    section article #ubicacion h4 {
-        padding: 15px;
-        font-size: 0.8rem;
+    .sec-nosotros h5 {
+        font-size: 1.1rem;
     }
 
     #ubicacion iframe {
-        padding: 1rem;
-        height: 17rem;
-        width: 23rem;
+        height: 22rem;
+        width: 30rem;
     }
 
     #faq .preguntas, #faq .consulta {
@@ -2300,7 +1476,6 @@ section article #ubicacion h4 {
         align-items: center;
         padding: 20px;
         border: 2px solid black;
-        border-radius: 15px;
         background-color: rgb(255, 255, 255, 0.5);
         margin: 1.5rem auto;
     }
@@ -2308,32 +1483,33 @@ section article #ubicacion h4 {
     #faq .preguntas .preguntas__title, #faq .consulta .consulta__title {
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 700;
+        font-weight: 600;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: crimson;
+        color: coral;
         text-shadow: 2px 2px 2px black;
         padding-bottom: 10px;
-        font-size: 1.05rem;
+        font-size: 1.1rem;
     }
     
     #faq .preguntas .preg {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 600;
         color: black;
         padding-top: 30px;
         padding-bottom: 30px;
+        text-align: center;
     }
     
     #faq .preguntas .resp {
-        border: solid 5px crimson;
+        border: solid 4px coral;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 5px 5px 5px white;
+        box-shadow: 4px 4px 4px white;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: medium;
-        color: black;
+        font-size: 0.9rem;
+        color: white;
     }
     
     #faq .consulta .consul {
@@ -2341,14 +1517,14 @@ section article #ubicacion h4 {
     }
     
     #faq .consulta .consul .consul-textarea {
-        width: 9.5cm;
+        width: 9cm;
         background-color: rgba(0,0,0,0.5);
         color: white;
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 5px solid crimson;
-        box-shadow: 5px 5px 5px white;
+        border: 4px solid coral;
+        box-shadow: 4px 4px 4px white;
         font-size: medium;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -2361,7 +1537,7 @@ section article #ubicacion h4 {
         border: none;
         color: black;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 600;
         cursor: pointer;
     }
@@ -2415,93 +1591,22 @@ section article #ubicacion h4 {
         line-height: 2rem;
     }
 
-    #nosotros nav {
-        color: white;
-        height: 55rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nosotros nav h3 {
-        height: auto;
-        width: 23rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
-    }
-
-    #nosotros nav h3 .principal {
-        font-size: medium;
-        font-weight: 600;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
-    }
-
-    #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 0.8rem;
-        align-items: center;
-        padding-top: 30px;
-    }
-
     #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
-        font-size: 0.9rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
+        font-size: medium;
     }
-
-    section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 1rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 0.8rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 0.75rem;
-    }
-
-    section article #ubicacion h4 {
-        padding-bottom: 10px;
-        font-size: 0.8rem;
+    
+    .sec-nosotros h5 {
+        font-size: 1rem;
     }
 
     #ubicacion iframe {
-        height: 17rem;
-        width: 28rem;
+        height: 20rem;
+        width: 29rem;
     }
 
     #faq .consulta .consul .consul-textarea {
         width: 8cm;
     }    
-
-    #form .ingresar .ingresar__input {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 16rem;
-    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2609,6 +1714,7 @@ section article #ubicacion h4 {
         text-align: center;
         margin: 1rem;
         margin-right: 3.5rem;
+        font-size: 0.8rem;
     }
     
     .item {
@@ -2684,14 +1790,6 @@ section article #ubicacion h4 {
         padding-block-end: 0cm;
     }
 
-    .hr {
-        margin-top: 1cm;
-        margin-bottom: 0cm;
-        width: 76%;
-        margin-left: 3.05rem;
-        color: #fff;
-    }
-
     .buttons-redes a {
         font-size: 1rem;
         height: 2rem;
@@ -2699,81 +1797,39 @@ section article #ubicacion h4 {
         line-height: 2rem;
     }
 
-    #nosotros nav {
-        color: white;
-        height: 56rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     #nosotros nav h3 {
-        height: auto;
-        width: 18rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
+        width: auto;
     }
 
     #nosotros nav h3 .principal {
-        font-size: medium;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
+        font-size: 1rem;
     }
 
     #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 0.8rem;
-        align-items: center;
-        padding-top: 30px;
+        font-size: 0.9rem;
     }
 
     #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
+        font-size: 0.8rem;
+    }
+    
+    .sec-nosotros h5 {
         font-size: 0.9rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
     }
 
     section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 1rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 0.8rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 0.75rem;
-    }
-
-    section article #ubicacion h4 {
-        padding-bottom: 10px;
-        font-size: 0.8rem;
+        margin: .5rem auto;
+        font-family: 'Times New Roman', Times, serif; 
+        text-transform: none;
     }
 
     #ubicacion iframe {
-        height: 15rem;
-        width: 22rem;
+        height: 20rem;
+        width: 24rem;
+    }
+
+    .sec-nosotros table {
+        font-size: 0.9rem;
     }
 
     #faq .preguntas, #faq .consulta {
@@ -2784,7 +1840,6 @@ section article #ubicacion h4 {
         align-items: center;
         padding: 20px;
         border: 2px solid black;
-        border-radius: 15px;
         background-color: rgb(255, 255, 255, 0.5);
         margin: 1.5rem auto;
     }
@@ -2792,32 +1847,33 @@ section article #ubicacion h4 {
     #faq .preguntas .preguntas__title, #faq .consulta .consulta__title {
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 700;
+        font-weight: 600;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: crimson;
+        color: coral;
         text-shadow: 2px 2px 2px black;
         padding-bottom: 10px;
-        font-size: 1.05rem;
+        font-size: 1.1rem;
     }
     
     #faq .preguntas .preg {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 600;
         color: black;
         padding-top: 30px;
         padding-bottom: 30px;
+        text-align: center;
     }
     
     #faq .preguntas .resp {
-        border: solid 5px crimson;
+        border: solid 4px coral;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 5px 5px 5px white;
+        box-shadow: 4px 4px 4px white;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.85rem;
-        color: black;
+        font-size: 0.9rem;
+        color: white;
     }
     
     #faq .consulta .consul {
@@ -2825,15 +1881,15 @@ section article #ubicacion h4 {
     }
     
     #faq .consulta .consul .consul-textarea {
-        width: 6.5cm;
+        width: 6cm;
         background-color: rgba(0,0,0,0.5);
         color: white;
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 5px solid crimson;
-        box-shadow: 5px 5px 5px white;
-        font-size: small;
+        border: 4px solid coral;
+        box-shadow: 4px 4px 4px white;
+        font-size: medium;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
     }
@@ -2845,7 +1901,7 @@ section article #ubicacion h4 {
         border: none;
         color: black;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         font-weight: 600;
         cursor: pointer;
     }
@@ -2858,151 +1914,33 @@ section article #ubicacion h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1.7rem;
+        padding: 3rem;
     }
     
-    #form .iniciar {
-        height: auto;
-        width: 80%;
-        border: 2px solid white;
-        align-items: center;
-        text-align: center;
-        font-size: larger;
-        padding: 1rem;
-        padding-bottom: 0%;
+    .form-signin {
+        border: 3px solid white;
+        padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px white;
-        margin-bottom: 1rem;
-    }
-    
-    #form .iniciar .title, .registrarse .title{
-        color: white;
-        font-size: large;
-        letter-spacing: 0.4rem;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        padding: 1rem;
-        font-weight: 600;
-    }
-    
-    #form .formulario {
-        display: inline-block;
-        width: 80%;
-        padding-top: 1.5rem;
-        color: white;
-        text-align: left;
-        font-size: small;
-        font-weight: 400;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    #form .formulario .form__label {
-        display: inline-block;
-        text-align: left;
-        font-weight: 600;
-        color: white;
-    }
-    
-    #form .formulario .form__input {
-        width: 100%;
-        margin-top: 1rem;
+        box-shadow: 3px 3px 3px rgba(0, 102, 255, 0.5);
         margin-bottom: 1.5rem;
-        padding: 5px;
-        border: none;
-        border-bottom: 4px solid crimson;
-        color: white;
-        background-color: rgba(0,0,0,0);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
     }
     
-    #form .ingresar, #form .registrarse__input{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .h4 {
+        margin: 2rem auto;
     }
     
-    #form .ingresar .checkbox, #form .tyc .chechbox  {
-        cursor: pointer;
+    .h4 u {
+        color: rgb(77, 206, 77);
     }
     
-    #form .formulario .form__input--sumbit {
-        background-color: rgba(0,0,0,0);
-        border: none;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: medium;
-        font-weight: 600;
-        cursor: pointer;
-    } 
-    
-    #form .formulario .form__input--sumbit:hover {
-        color: crimson;
-    }
-    
-    .line {
-        margin-top: 0.5cm;
-        margin-bottom: 0.5cm;
-        width: 60%;
-        color: #fff;
-    }
-    
-    #form .registrarse {
-        margin-top: 1.5rem;
-        height: auto;
-        width: 80%;
-        border: 2px solid white;
-        align-items: center;
-        text-align: center;
-        font-size: medium;
-        padding: 1rem;
-        padding-bottom: 1rem;
+    .registro {
+        border: 3px solid white;
+        padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px white;
-    }
-    
-    #form .ingresar {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #form .tyc .checkbox {
-        padding: 2rem auto;
-        font-size: small;
-    }
-    
-    #form .registrarse .form__select {
-        width: 100%;
-        margin-top: 1rem;
+        box-shadow: 3px 3px 3px rgb(0, 102, 255, 0.5);
         margin-bottom: 1.5rem;
-        padding: 5px;
-        border: none;
-        border: 4px solid crimson;
-        color: white;
-        background-color: rgba(0,0,0,0);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-    }
-    
-    #form .registrarse .form__option {
-        background-color: black;
-        color: white;
-    }
-    
-    #form .ingresar .ingresar__input {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 16rem;
-    }
-
-    #form .ingresar .ingresar__input .form__input--sumbit{
-        font-size: 0.9rem;
-        margin: 1rem auto;
     }
 }
 
@@ -3024,81 +1962,14 @@ section article #ubicacion h4 {
         margin-right: .75rem;
     }
 
-    #nosotros nav {
-        color: white;
-        height: 57rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nosotros nav h3 {
-        height: auto;
-        width: 18rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
-    }
-
-    #nosotros nav h3 .principal {
-        font-size: 1rem;
-        font-weight: 800;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
-    }
-
-    #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 0.8rem;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
-        font-size: 1rem;
-        font-weight: 700;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
-    }
-
-    section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 1rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 0.65rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 0.7rem;
-    }
-
-    section article #ubicacion h4 {
-        padding-bottom: 10px;
-        font-size: 0.8rem;
-    }
-
     #ubicacion iframe {
-        height: 15rem;
+        height: 19rem;
         width: 20rem;
+    }
+
+    .sec-nosotros table {
+        font-size: 0.8rem;
+        margin-bottom: 0;
     }
 
     #faq .preguntas, #faq .consulta {
@@ -3109,7 +1980,6 @@ section article #ubicacion h4 {
         align-items: center;
         padding: 20px;
         border: 2px solid black;
-        border-radius: 15px;
         background-color: rgb(255, 255, 255, 0.5);
         margin: 1.5rem auto;
     }
@@ -3117,17 +1987,17 @@ section article #ubicacion h4 {
     #faq .preguntas .preguntas__title, #faq .consulta .consulta__title {
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 700;
+        font-weight: 600;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: crimson;
+        color: coral;
         text-shadow: 2px 2px 2px black;
         padding-bottom: 10px;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     #faq .preguntas .preg {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 600;
         color: black;
@@ -3137,13 +2007,13 @@ section article #ubicacion h4 {
     }
     
     #faq .preguntas .resp {
-        border: solid 5px crimson;
+        border: solid 4px coral;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 5px 5px 5px white;
+        box-shadow: 4px 4px 4px white;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.75rem;
-        color: black;
+        font-size: 0.8rem;
+        color: white;
     }
     
     #faq .consulta .consul {
@@ -3151,14 +2021,14 @@ section article #ubicacion h4 {
     }
     
     #faq .consulta .consul .consul-textarea {
-        width: 5cm;
+        width: 4.5cm;
         background-color: rgba(0,0,0,0.5);
         color: white;
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 5px solid crimson;
-        box-shadow: 5px 5px 5px white;
+        border: 4px solid coral;
+        box-shadow: 4px 4px 4px white;
         font-size: small;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -3171,7 +2041,7 @@ section article #ubicacion h4 {
         border: none;
         color: black;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         font-weight: 600;
         cursor: pointer;
     }
@@ -3184,151 +2054,33 @@ section article #ubicacion h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
+        padding: 2rem;
     }
     
-    #form .iniciar {
-        height: auto;
-        width: 80%;
-        border: 2px solid white;
-        align-items: center;
-        text-align: center;
-        font-size: 0.8rem;
-        padding: 1rem;
-        padding-bottom: 0%;
+    .form-signin {
+        border: 3px solid white;
+        padding: 2rem 2rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px white;
-        margin-bottom: 1rem;
-    }
-    
-    #form .iniciar .title, .registrarse .title{
-        color: white;
-        font-size: medium;
-        letter-spacing: 0.4rem;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        padding: 1rem;
-        font-weight: 600;
-    }
-    
-    #form .formulario {
-        display: inline-block;
-        width: 80%;
-        padding-top: 1.5rem;
-        color: white;
-        text-align: left;
-        font-size: 0.7rem;
-        font-weight: 400;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    #form .formulario .form__label {
-        display: inline-block;
-        text-align: left;
-        font-weight: 600;
-        color: white;
-    }
-    
-    #form .formulario .form__input {
-        width: 100%;
-        margin-top: 1rem;
+        box-shadow: 3px 3px 3px rgba(0, 102, 255, 0.5);
         margin-bottom: 1.5rem;
-        padding: 5px;
-        border: none;
-        border-bottom: 4px solid crimson;
-        color: white;
-        background-color: rgba(0,0,0,0);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.8rem;
     }
     
-    #form .ingresar, #form .registrarse__input{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .h4 {
+        margin: 2rem auto;
     }
     
-    #form .ingresar .checkbox, #form .tyc .chechbox  {
-        cursor: pointer;
+    .h4 u {
+        color: rgb(77, 206, 77);
     }
     
-    #form .formulario .form__input--sumbit {
-        background-color: rgba(0,0,0,0);
-        border: none;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: small;
-        font-weight: 600;
-        cursor: pointer;
-    } 
-    
-    #form .formulario .form__input--sumbit:hover {
-        color: crimson;
-    }
-    
-    .line {
-        margin-top: 0.5cm;
-        margin-bottom: 0.5cm;
-        width: 60%;
-        color: #fff;
-    }
-    
-    #form .registrarse {
-        margin-top: 1.5rem;
-        height: auto;
-        width: 80%;
-        border: 2px solid white;
-        align-items: center;
-        text-align: center;
-        font-size: 0.8rem;
-        padding: 1rem;
-        padding-bottom: 1rem;
+    .registro {
+        border: 3px solid white;
+        padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px white;
-    }
-    
-    #form .ingresar {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #form .tyc .checkbox {
-        padding: 2rem auto;
-        font-size: 0.7rem;
-    }
-    
-    #form .registrarse .form__select {
-        width: 100%;
-        margin-top: 1rem;
+        box-shadow: 3px 3px 3px rgb(0, 102, 255, 0.5);
         margin-bottom: 1.5rem;
-        padding: 5px;
-        border: none;
-        border: 4px solid crimson;
-        color: white;
-        background-color: rgba(0,0,0,0);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-    }
-    
-    #form .registrarse .form__option {
-        background-color: black;
-        color: white;
-    }
-    
-    #form .ingresar .ingresar__input {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 13rem;
-    }
-
-    #form .ingresar .ingresar__input .form__input--sumbit{
-        font-size: 0.8rem;
-        margin: 1rem auto;
     }
 }
 
@@ -3358,83 +2110,6 @@ section article #ubicacion h4 {
         font-size: small;
     }
 
-    #nosotros nav {
-        color: white;
-        height: 55rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nosotros nav h3 {
-        height: auto;
-        width: 18rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
-    }
-
-    #nosotros nav h3 .principal {
-        font-size: 0.85rem;
-        font-weight: 700;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
-    }
-
-    #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 0.7rem;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
-        font-size: 0.8rem;
-        font-weight: 500;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
-    }
-
-    section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 0.9375rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 0.7rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 0.66rem;
-    }
-
-    section article #ubicacion h4 {
-        padding-bottom: 10px;
-        font-size: 0.6rem;
-    }
-
-    #ubicacion iframe {
-        height: 10rem;
-        width: 15rem;
-    }
-
     .nav-galeria .nav-galeria--menu {
         width: auto;
         height: auto;
@@ -3446,6 +2121,132 @@ section article #ubicacion h4 {
         margin: 1rem;
         margin-right: 3.5rem;
         font-size: 0.7rem;
+    }
+
+    #nosotros nav h3 .principal {
+        font-size: 0.9rem;
+    }
+
+    #ubicacion iframe {
+        height: 17rem;
+        width: 18rem;
+    }
+
+    .nav-galeria {
+        position: sticky;
+        top: 4.6cm;
+    }
+
+    #faq .preguntas, #faq .consulta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        align-items: center;
+        padding: 20px;
+        border: 2px solid black;
+        background-color: rgb(255, 255, 255, 0.5);
+        margin: 1.5rem auto;
+    }
+    
+    #faq .preguntas .preguntas__title, #faq .consulta .consulta__title {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: coral;
+        text-shadow: 2px 2px 2px black;
+        padding-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    
+    #faq .preguntas .preg {
+        font-size: 0.8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        color: black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    
+    #faq .preguntas .resp {
+        border: solid 4px coral;
+        background-color: rgba(0,0,0,0.5);
+        box-shadow: 4px 4px 4px white;
+        padding: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.7rem;
+        color: white;
+    }
+    
+    #faq .consulta .consul {
+        padding-top: 20px
+    }
+    
+    #faq .consulta .consul .consul-textarea {
+        width: 5cm;
+        height: 4cm;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        border: 4px solid coral;
+        box-shadow: 4px 4px 4px white;
+        font-size: small;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        resize: none;
+    }
+    
+    #faq .consulta .consul-enviar {
+        float: right;
+        margin-top: 10px;
+        background-color: rgba(0,0,0,0);
+        border: none;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.75rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    #form {
+        height: auto;
+        width: 100%;
+        background-image: url(./img/fondo6.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .form-signin {
+        border: 3px solid white;
+        padding: 2rem 2rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgba(0, 102, 255, 0.5);
+        margin-bottom: 1.5rem;
+    }
+    
+    .h4 {
+        margin: 2rem auto;
+    }
+    
+    .h4 u {
+        color: rgb(77, 206, 77);
+    }
+    
+    .registro {
+        border: 3px solid white;
+        padding: 2rem 3rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgb(0, 102, 255, 0.5);
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -3466,12 +2267,10 @@ section article #ubicacion h4 {
         grid-template-rows: repeat(3, 1fr);
         color: white;
         text-align: center;
-        margin: 1rem;
-        margin-left: 0.5rem;
+        margin: 1rem auto;
         margin-right: 3.5rem;
         font-size: 0.7rem;
     }
-
 
     #galeria #contenedor-escritorio, #galeria #contenedor-placard, #galeria #contenedor-alacena, #galeria #contenedor-isla, #galeria #contenedor-escalera, #galeria #contenedor-comoda, #galeria #contenedor-barra, #galeria #contenedor-rack {
         display: grid;
@@ -3493,15 +2292,7 @@ section article #ubicacion h4 {
 
     .nav-galeria {
         position: sticky;
-        top: 4cm;
-    }
-
-    .hr {
-        margin-top: 0.6cm;
-        margin-bottom: 0cm;
-        width: 73%;
-        margin-left: 2.5rem;
-        color: #fff;
+        top: 4.6cm;
     }
     
     #HOME {
@@ -3532,135 +2323,41 @@ section article #ubicacion h4 {
         font-size: 0.7rem;
     }
 
-    .cards{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    
-    .container__card {
-        margin-top: 2rem;
-        width: 17rem;
-        height: 22rem;
-    }
-    
-    .container__card .title {
-        font-size: small;
-        font-weight: 300;
-    }
-    
-    .container__card .subtitle {
-        font-size: x-small;
-        font-weight: 200;
-    }
-        
-    .usuario{
-        width: 100%;
-        margin-right: 2rem;
-    }
-    
-    .cards a{
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.7rem;
-        transition: 0.5s;
-    }
-    
-    .tarjetas img{
-        width: 3rem;
-    }
-
-    #nosotros nav {
-        color: white;
-        height: 55rem;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nosotros nav h3 {
-        height: auto;
-        width: 14rem;
-        background-color: crimson;
-        text-align: center;
-        padding-top: 15px;
-        border: 2px solid white;
-        box-shadow: 5px 5px 5px grey;
-        border-radius: 15px;
+    #ubicacion iframe {
+        height: 14rem;
+        width: 16rem;
     }
 
     #nosotros nav h3 .principal {
-        font-size: small;
-        font-weight: 600;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        text-decoration: underline;
-        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     }
 
-    #nosotros nav h3 ul {
-        display: flex;
-        flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-size: 0.6rem;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    #nosotros nav .definicion {
-        width: auto;
-        border: 2px solid white;
-        border-radius: 0%;
-        background-color: black;
-        padding: 15px;
+    .sec-nosotros h5 {
         font-size: 0.8rem;
-        font-weight: 500;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        color: white;
+    }
+
+    .sec-nosotros table {
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+
+    .table-warning {
+        font-size: 0.8rem;
     }
 
     section .at-cliente {
-        height: auto;
-        width: auto;
-        padding: 0.625rem;
-    }
-
-    #at-cliente h4 {
-        font-size: 0.6rem;
-    }
-
-    #at-cliente .tabla {
-        font-size: 0.66rem;
-    }
-
-    section article #ubicacion h4 {
-        padding-bottom: 10px;
-        font-size: 0.6rem;
-    }
-
-    #ubicacion iframe {
-        height: 10rem;
-        width: 15rem;
+        padding: 0;
     }
 
     #faq .preguntas, #faq .consulta {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 85%;
+        width: 80%;
         align-items: center;
         padding: 20px;
         border: 2px solid black;
-        border-radius: 15px;
         background-color: rgb(255, 255, 255, 0.5);
         margin: 1.5rem auto;
     }
@@ -3668,17 +2365,17 @@ section article #ubicacion h4 {
     #faq .preguntas .preguntas__title, #faq .consulta .consulta__title {
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 700;
+        font-weight: 600;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: crimson;
+        color: coral;
         text-shadow: 2px 2px 2px black;
         padding-bottom: 10px;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     #faq .preguntas .preg {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 600;
         color: black;
@@ -3688,13 +2385,13 @@ section article #ubicacion h4 {
     }
     
     #faq .preguntas .resp {
-        border: solid 5px crimson;
+        border: solid 4px coral;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 5px 5px 5px white;
+        box-shadow: 4px 4px 4px white;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.65rem;
-        color: black;
+        font-size: 0.7rem;
+        color: white;
     }
     
     #faq .consulta .consul {
@@ -3702,14 +2399,15 @@ section article #ubicacion h4 {
     }
     
     #faq .consulta .consul .consul-textarea {
-        width: 4cm;
+        width: 4.5cm;
+        height: 4cm;
         background-color: rgba(0,0,0,0.5);
         color: white;
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 5px solid crimson;
-        box-shadow: 5px 5px 5px white;
+        border: 4px solid coral;
+        box-shadow: 4px 4px 4px white;
         font-size: small;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -3718,29 +2416,51 @@ section article #ubicacion h4 {
     #faq .consulta .consul-enviar {
         float: right;
         margin-top: 10px;
+        margin-right: 10px;
         background-color: rgba(0,0,0,0);
         border: none;
         color: black;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         font-weight: 600;
         cursor: pointer;
     }
 
-    #form .iniciar .title, .registrarse .title{
-        color: white;
-        font-size: small;
-        letter-spacing: 0.4rem;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        padding: 1rem;
-        font-weight: 600;
-    }
-
-    #form .ingresar .ingresar__input {
+    #form {
+        height: auto;
+        width: 100%;
+        background-image: url(./img/fondo6.jpg);
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 12rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        padding-top: 3rem;
+    }
+    
+    .form-signin {
+        border: 3px solid white;
+        padding: 1rem 1rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgba(0, 102, 255, 0.5);
+        margin-bottom: 1.5rem;
+    }
+    
+    .h4 {
+        margin: 2rem auto;
+    }
+    
+    .h4 u {
+        color: rgb(77, 206, 77);
+    }
+    
+    .registro {
+        border: 3px solid white;
+        padding: 2rem 3rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgb(0, 102, 255, 0.5);
+        margin-bottom: 1.5rem;
     }
 }
