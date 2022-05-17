@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+// Variables //
+
+$white: white;
+$black: black;
+$coral: coral;
+$gray: gray;
+
+$border-lg: coral 4px solid;
+$border-md: coral 2.5px solid;
+$border-sm: coral 1px solid;
+
+$box-shadow-lg: 5px 5px 5px rgba(0,0,0,0.5);
+$box-shadow-md: 3.5px 3.5px 3.5px rgba(0,0,0,0.5);
+$box-shadow-sm: 2px 2px 2px rgba(0,0,0,0.5);
+
+// Header //
+
 header {
     background-image: url(./img/fondo7.jpg);
     background-size: contain;
@@ -14,8 +31,12 @@ header {
     flex-direction: column;
 }
 
+.navbar-dark .navbar-toggler {
+    font-size: 1rem;
+}
+
 header .container-fluid {
-    color: white;
+    color: $white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 2.2rem;
     margin-bottom: 0.65rem;
@@ -59,7 +80,36 @@ header h2 a:hover {
     color: coral;
 }
 
-#carousel {
+.dropdown-menu {
+    color: black;
+    background: darkgrey;
+}
+
+.dropdown-item:hover {
+    background-color: coral;
+    color: white;
+}
+
+.d-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+    align-items: baseline;
+    padding-left: 0;
+}
+
+.btn:hover {
+    background: darkgrey;
+    color: black;
+}
+
+.btn:hover > span {
+    background: darkgrey;
+    color: black;
+}
+
+
+#carouselExampleControls {
     margin: 0.5rem 7.3rem;
 }
 
@@ -173,16 +223,19 @@ header h2 a:hover {
     align-items: center;
 }
 
-.escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
-    position: relative;
-    height: 15.625rem;
-    width: 15.625rem;
-    overflow: hidden;
-    border-radius: 0.375rem;
-    box-shadow: 0rem 0.9375rem 1.5625rem rgba(0,0,0,0.50);
-    cursor: pointer;
-
+@mixin sizes ($width, $height, $position, $overflow, $border, $box, $cursor) {
+    height: $height;
+    width: $width;
+    position: $position;
+    overflow: $overflow;
+    border-radius: $border;
+    box-shadow: $box;
+    cursor: $cursor;
 }
+
+.escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
+    @include sizes (15.625rem, 15.625rem, relative, hidden, 0.375rem, 0rem 0.9375rem 1.5625rem rgba(0,0,0,0.50), pointer);
+}    
 
 .escritorio figure {
     background-image: url(img/escritorio6.jpg);
@@ -220,7 +273,7 @@ header h2 a:hover {
 }
 
 .comoda figure {
-    background-image: url(img/comoda2.jpg);
+    background-image: url(img/comoda1.jpg);
     background-size: cover;
     background-position: center;
     transition: all 500ms ease-out;
@@ -278,7 +331,8 @@ header h2 a:hover {
 
 .escritorio figure .capa p, .isla figure .capa p, .placard figure .capa p, .alacena figure .capa p, .escalera figure .capa p, .barra figure .capa p, .comoda figure .capa p, .rack figure .capa p {
     color: white;
-    font-size: 0.9rem;
+    font-size
+    : 0.9rem;
     line-height: 1.5;
     width: 100%;
     max-width: 13.75rem;
@@ -296,13 +350,13 @@ footer {
     align-items: center;
 }
 
-.buttons-redes {
+.btn__redes {
     width: 43.75rem;
     display: flex;
     justify-content: space-around;
 }
 
-.buttons-redes a {
+.btn__redes a {
     text-decoration: none;
     font-size: 1.25rem;
     height: 2.5rem;
@@ -310,17 +364,41 @@ footer {
     line-height: 2.4rem;
     text-align: center;
     color: #fff;
-    background: black;
     border-radius: 50%;
     box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0,0,0,0.50);
     transition: initial;
 }
 
-.buttons-redes a:hover {
+.btn__redes a:hover {
     transform: scale(1.2);
 }
 
-/* galeria */
+$redes: (
+        instagram: rgb(85, 23, 23),
+        facebook: #3b5998,
+        linkedin: rgb(35, 35, 112),
+        telephone: rgb(202, 42, 42),
+        location: black,
+        whatsapp: rgb(17, 228, 17),
+    );
+
+    @each $red, $color in $redes {
+        .btn__redes--#{$red} {
+            background-color: $color;
+        }
+    }
+
+$gradiente: (
+    back: #d6249f,
+    gradiente: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)
+);
+
+.btn__redes--instagram {
+    background: map-get($gradiente, back);
+    background: map-get($gradiente, gradiente);
+}
+
+// Galeria //
 
 #galeria {
     height: auto;
@@ -475,8 +553,8 @@ footer {
 }
 
 #contenedor-escritorio .item, #contenedor-placard .item, #contenedor-alacena .item, #contenedor-isla .item, #contenedor-escalera .item, #contenedor-comoda .item, #contenedor-barra .item, #contenedor-rack .item {
-    border: 4px coral solid;
-    box-shadow: 4px 4px 4px gray;
+    border: $border-lg;
+    box-shadow: $box-shadow-lg;
 }
 
 #esc1 {
@@ -780,7 +858,7 @@ footer {
     background-size: cover;
 }
 
-/* nosotros */
+// Nosotros //
 
 #nosotros {
     height: auto;
@@ -800,15 +878,15 @@ footer {
     width: 25rem;
     background-color: rgba(0,0,0,0.5);
     text-align: center;
-    border: 2px solid white;
-    box-shadow: 4px 4px 4px gray;
+    border: $border-md;
+    box-shadow: $box-shadow-md;
     border-radius: 10px;
     margin-bottom: 3rem;
 }
 
 #nosotros nav h3 .principal {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     color: coral;
     text-transform: uppercase;
@@ -825,7 +903,7 @@ footer {
 
 #nosotros nav .definicion{
     width: auto;
-    border: 2px solid white;
+    border: $border-md;
     border-radius: 0%;
     background-color: rgba(0,0,0,0.5);
     padding: 15px;
@@ -835,6 +913,7 @@ footer {
     text-transform: uppercase;
     color: white;
     margin-bottom: 0;
+    letter-spacing: 0.7px;
 }
 
 #nosotros nav .definicion a {
@@ -855,6 +934,7 @@ footer {
 .sec-nosotros h5 {
     color: white;
     text-transform: uppercase;
+    text-align: center;
 }
 section .at-cliente {
     height: auto;
@@ -878,7 +958,7 @@ section .at-cliente {
     color: crimson;
 }
 
-/* contacto */
+// Contacto //
 
 #form {
     height: auto;
@@ -892,15 +972,20 @@ section .at-cliente {
 }
 
 .form-signin {
-    border: 4px solid coral;
+    border: $border-lg;
     padding: 2rem 3rem;
     background-color: rgba(0,0,0,0.50);
     border-radius: 15px;
-    box-shadow: 4px 4px 4px gray;
+    box-shadow: $box-shadow-lg;
     margin-bottom: 1.5rem;
+
+    .row {
+        width: 35rem;
+    }
 
     button{
         background-color: coral;
+        width: 10rem;
     }
 }
 
@@ -913,19 +998,10 @@ section .at-cliente {
 }
 
 .registro {
-    border: 4px solid coral;
-    padding: 2rem 3rem;
-    background-color: rgba(0,0,0,0.50);
-    border-radius: 15px;
-    box-shadow: 4px 4px 4px gray;
-    margin-bottom: 1.5rem;
-
-    button{
-        background-color: coral;
-    }
+    @extend .form-signin;
 }
 
-/* faq */
+// FAQs //
 
 #faq {
     height: auto;
@@ -971,9 +1047,9 @@ section .at-cliente {
 }
 
 #faq .preguntas .resp {
-    border: solid 4px coral;
+    border: $border-lg;
     background-color: rgba(0,0,0,0.5);
-    box-shadow: 5px 5px 5px white;
+    box-shadow: $box-shadow-lg;
     padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
@@ -991,8 +1067,8 @@ section .at-cliente {
     margin: 10px;
     padding: 10px;
     border: none;
-    border: 4px solid coral;
-    box-shadow: 5px 5px 5px white;
+    border: $border-lg;
+    box-shadow: $box-shadow-lg;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     resize: none;
@@ -1031,7 +1107,7 @@ section .at-cliente {
         width: 11rem;
     }
     
-    #carousel {
+    #carouselExampleControls {
         margin-left: 4rem;
         margin-right: 4rem;
     }
@@ -1110,12 +1186,11 @@ section .at-cliente {
         justify-content: center;
         align-items: center;
     }
-    
-    .escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
-        height: 20rem;
-        width: 20rem;
-    }
 
+    .escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
+        @include sizes (20rem, 20rem, relative, hidden, 0.375rem, 0rem 0.9375rem 1.5625rem rgba(0,0,0,0.50), pointer);
+    }
+    
     #form {
         height: auto;
         width: 100%;
@@ -1133,7 +1208,7 @@ section .at-cliente {
     height: 450px;
     }
 
-    #carousel {
+    #carouselExampleControls {
         margin-left: 6.5rem;
         margin-right: 6.5rem;
     }
@@ -1193,7 +1268,7 @@ section .at-cliente {
         height: 450px;
         }
     
-    #carousel {
+    #carouselExampleControls {
         margin-left: 2.25rem;
         margin-right: 2.25rem;
     }
@@ -1263,8 +1338,7 @@ section .at-cliente {
     }
     
     .escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
-        height: 17rem;
-        width: 17rem;
+        @include sizes (17rem, 17rem, relative, hidden, 0.375rem, 0rem 0.9375rem 1.5625rem rgba(0,0,0,0.50), pointer);
     }
     
     .nav-galeria .nav-galeria--menu {
@@ -1302,6 +1376,18 @@ section .at-cliente {
         padding-inline-end: 1.5cm;
         padding-block-start: 1cm;
         padding-block-end: 0cm;
+    }
+
+    .sec-nosotros h5 {
+        font-size: 1rem;
+    }
+
+    #nosotros nav .definicion {
+        font-size: medium;
+    }
+
+    #nosotros nav h3 .principal {
+        font-size: 1rem;
     }
 
     .sec-nosotros table {
@@ -1348,9 +1434,9 @@ section .at-cliente {
     }
     
     #faq .preguntas .resp {
-        border: solid 4px coral;
+        border: $border-lg;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 4px 4px 4px white;
+        box-shadow: $box-shadow-lg;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.9rem;
@@ -1368,8 +1454,8 @@ section .at-cliente {
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 4px solid coral;
-        box-shadow: 4px 4px 4px white;
+        border: $border-lg;
+        box-shadow: $box-shadow-lg;
         font-size: medium;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -1399,13 +1485,21 @@ section .at-cliente {
     }
     
     .form-signin {
-        border: 4px solid coral;
+        border: $border-lg;
         padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-lg;
         margin-bottom: 1.5rem;
-        font-size: 1rem;
+    
+        .row {
+            width: 28rem;
+        }
+    
+        button{
+            background-color: coral;
+            width: 10rem;
+        }
     }
     
     .h4 {
@@ -1417,12 +1511,21 @@ section .at-cliente {
     }
     
     .registro {
-        border: 4px solid coral;
+        border: $border-lg;
         padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-lg;
         margin-bottom: 1.5rem;
+
+        .row {
+            width: 28rem;
+        }
+
+        button{
+            background-color: coral;
+            width: 10rem;
+        }
     }
 }
 
@@ -1431,7 +1534,7 @@ section .at-cliente {
         height: 380px;
     }
     
-    #carousel {
+    #carouselExampleControls {
         margin-left: 4.5rem;
         margin-right: 4.5rem;
     }
@@ -1485,8 +1588,7 @@ section .at-cliente {
     }
 
     .escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
-        height: 14rem;
-        width: 14rem;
+        @include sizes (14rem, 14rem, relative, hidden, 0.375rem, 0rem 0.9375rem 1.5625rem rgba(0,0,0,0.50), pointer);
     }
     
     .nav-galeria .nav-galeria--menu {
@@ -1527,7 +1629,15 @@ section .at-cliente {
     }
 
     .sec-nosotros h5 {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+    #nosotros nav .definicion {
+        font-size: medium;
+    }
+
+    #nosotros nav h3 .principal {
+        font-size: 1rem;
     }
 
     #ubicacion iframe {
@@ -1570,9 +1680,9 @@ section .at-cliente {
     }
     
     #faq .preguntas .resp {
-        border: solid 4px coral;
+        border: $border-md;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 4px 4px 4px white;
+        box-shadow: $box-shadow-md;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.9rem;
@@ -1584,14 +1694,14 @@ section .at-cliente {
     }
     
     #faq .consulta .consul .consul-textarea {
-        width: 9cm;
+        width: 8cm;
         background-color: rgba(0,0,0,0.5);
         color: white;
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 4px solid coral;
-        box-shadow: 4px 4px 4px white;
+        border: $border-md;
+        box-shadow: $box-shadow-md;
         font-size: medium;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -1608,6 +1718,61 @@ section .at-cliente {
         font-weight: 600;
         cursor: pointer;
     }
+
+    #form {
+        height: auto;
+        width: 100%;
+        background-image: url(./img/fondo6.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+    
+    .form-signin {
+        border: $border-md;
+        padding: 2rem 3rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: $box-shadow-md;
+        margin-bottom: 1.5rem;
+    
+        .row {
+            width: 25rem;
+        }
+    
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
+    }
+    
+    .h4 {
+        margin: 2rem auto;
+    }
+    
+    .h4 u {
+        color: rgb(77, 206, 77);
+    }
+    
+    .registro {
+        border: $border-md;
+        padding: 2rem 3rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: $box-shadow-md;
+        margin-bottom: 1.5rem;
+
+        .row {
+            width: 25rem;
+        }
+
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 580px) {
@@ -1619,7 +1784,7 @@ section .at-cliente {
         height: 380px;
     }
     
-    #carousel {
+    #carouselExampleControls {
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -1678,6 +1843,10 @@ section .at-cliente {
     #nosotros nav .definicion {
         font-size: medium;
     }
+
+    #nosotros nav h3 .principal {
+        font-size: 1rem;
+    }
     
     .sec-nosotros h5 {
         font-size: 1rem;
@@ -1691,6 +1860,61 @@ section .at-cliente {
     #faq .consulta .consul .consul-textarea {
         width: 8cm;
     }    
+
+    #form {
+        height: auto;
+        width: 100%;
+        background-image: url(./img/fondo6.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+    
+    .form-signin {
+        border: $border-md;
+        padding: 2rem 3rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: $box-shadow-md;
+        margin-bottom: 1.5rem;
+    
+        .row {
+            width: 21rem;
+        }
+    
+        button{
+            background-color: coral;
+            width: 10rem;
+        }
+    }
+    
+    .h4 {
+        margin: 2rem auto;
+    }
+    
+    .h4 u {
+        color: rgb(77, 206, 77);
+    }
+    
+    .registro {
+        border: $border-md;
+        padding: 2rem 3rem;
+        background-color: rgba(0,0,0,0.50);
+        border-radius: 15px;
+        box-shadow: $box-shadow-md;
+        margin-bottom: 1.5rem;
+
+        .row {
+            width: 21rem;
+        }
+
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1702,7 +1926,7 @@ section .at-cliente {
         height: 320px;
     }
     
-    #carousel {
+    #carouselExampleControls {
         margin-left: .75rem;
         margin-right: .75rem;
     }
@@ -1817,8 +2041,7 @@ section .at-cliente {
     }
     
     .escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
-        height: 16rem;
-        width: 16rem;
+        @include sizes (16rem, 16rem, relative, hidden, 0.375rem, 0rem 0.9375rem 1.5625rem rgba(0,0,0,0.50), pointer);
     }
     
     #galeria {
@@ -1924,7 +2147,7 @@ section .at-cliente {
     }
 
     #nosotros nav h3 .principal {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     #nosotros nav h3 ul {
@@ -1989,9 +2212,9 @@ section .at-cliente {
     }
     
     #faq .preguntas .resp {
-        border: solid 4px coral;
+        border: $border-md;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 4px 4px 4px white;
+        box-shadow: $box-shadow-md;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.9rem;
@@ -2009,8 +2232,8 @@ section .at-cliente {
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 4px solid coral;
-        box-shadow: 4px 4px 4px white;
+        border: $border-md;
+        box-shadow: $box-shadow-md;
         font-size: medium;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -2040,12 +2263,21 @@ section .at-cliente {
     }
     
     .form-signin {
-        border: 4px solid coral;
+        border: $border-md;
         padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
+    
+        .row {
+            width: 18rem;
+        }
+    
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
     }
     
     .h4 {
@@ -2057,16 +2289,36 @@ section .at-cliente {
     }
     
     .registro {
-        border: 4px solid coral;
+        border: $border-md;
         padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
+
+        .row {
+            width: 16rem;
+        }
+
+        button{
+            background-color: coral;
+            width: 16rem;
+        }
     }
 }
 
 @media only screen and (max-width: 420px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    #login {
+        margin: 0;
+    }
+
     header .container-fluid {
         height: 3rem;
     }
@@ -2079,7 +2331,7 @@ section .at-cliente {
         height: 330px;
     }
     
-    #carousel {
+    #carouselExampleControls {
         margin-left: .75rem;
         margin-right: .75rem;
     }
@@ -2088,6 +2340,8 @@ section .at-cliente {
         height: 19rem;
         width: 20rem;
     }
+
+
 
     .sec-nosotros table {
         font-size: 0.8rem;
@@ -2129,9 +2383,9 @@ section .at-cliente {
     }
     
     #faq .preguntas .resp {
-        border: solid 4px coral;
+        border: $border-sm;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 4px 4px 4px white;
+        box-shadow: $box-shadow-sm;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.8rem;
@@ -2149,8 +2403,8 @@ section .at-cliente {
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 4px solid coral;
-        box-shadow: 4px 4px 4px white;
+        border: $border-sm;
+        box-shadow: $box-shadow-sm;
         font-size: small;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -2176,16 +2430,25 @@ section .at-cliente {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
+        padding: 3rem;
     }
     
     .form-signin {
-        border: 4px solid coral;
-        padding: 2rem 2rem;
+        border: $border-sm;
+        padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
+    
+        .row {
+            width: 15rem;
+        }
+    
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
     }
     
     .h4 {
@@ -2197,12 +2460,21 @@ section .at-cliente {
     }
     
     .registro {
-        border: 4px solid coral;
+        border: $border-sm;
         padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
+
+        .row {
+            width: 15rem;
+        }
+
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
     }
 }
 
@@ -2219,7 +2491,7 @@ section .at-cliente {
         height: 250px;
     }
     
-    #carousel {
+    #carouselExampleControls {
         margin-left: .75rem;
         margin-right: .75rem;
     }
@@ -2347,9 +2619,9 @@ section .at-cliente {
     }
     
     #faq .preguntas .resp {
-        border: solid 4px coral;
+        border: $border-md;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 4px 4px 4px white;
+        box-shadow: $box-shadow-md;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.7rem;
@@ -2362,14 +2634,14 @@ section .at-cliente {
     
     #faq .consulta .consul .consul-textarea {
         width: 5cm;
-        height: 4cm;
+        height: 4.5cm;
         background-color: rgba(0,0,0,0.5);
         color: white;
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 4px solid coral;
-        box-shadow: 4px 4px 4px white;
+        border: $border-md;
+        box-shadow: $box-shadow-md;
         font-size: small;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -2395,16 +2667,25 @@ section .at-cliente {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
+        padding: 3rem;
     }
     
     .form-signin {
-        border: 4px solid coral;
-        padding: 2rem 2rem;
+        border: $border-sm;
+        padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
+    
+        .row {
+            width: 12rem;
+        }
+    
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
     }
     
     .h4 {
@@ -2416,12 +2697,21 @@ section .at-cliente {
     }
     
     .registro {
-        border: 4px solid coral;
+        border: $border-sm;
         padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
+
+        .row {
+            width: 12rem;
+        }
+
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
     }
 }
 
@@ -2537,10 +2827,8 @@ section .at-cliente {
     }
 
     .escritorio figure, .isla figure, .placard figure, .alacena figure, .escalera figure, .barra figure, .comoda figure, .rack figure {
-        height: 12rem;
-        width: 12rem;
+        @include sizes (12rem, 12rem, relative, hidden, 0.375rem, 0rem 0.9375rem 1.5625rem rgba(0,0,0,0.50), pointer);
     }
-    
     .escritorio figure:hover > .capa h3, .isla figure:hover > .capa h3, .placard figure:hover > .capa h3, .alacena figure:hover > .capa h3, .escalera figure:hover > .capa h3, .barra figure:hover > .capa h3, .comoda figure:hover > .capa h3, .rack figure:hover > .capa h3 {
         margin-top: 3rem;
         font-size: 0.7rem;
@@ -2612,9 +2900,9 @@ section .at-cliente {
     }
     
     #faq .preguntas .resp {
-        border: solid 4px coral;
+        border: $border-sm;
         background-color: rgba(0,0,0,0.5);
-        box-shadow: 4px 4px 4px white;
+        box-shadow: $box-shadow-sm;
         padding: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.7rem;
@@ -2633,8 +2921,8 @@ section .at-cliente {
         margin: 10px;
         padding: 10px;
         border: none;
-        border: 4px solid coral;
-        box-shadow: 4px 4px 4px white;
+        border: $border-sm;
+        box-shadow: $box-shadow-sm;
         font-size: small;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         resize: none;
@@ -2661,17 +2949,25 @@ section .at-cliente {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-        padding-top: 3rem;
+        padding: 3rem;
     }
     
     .form-signin {
-        border: 4px solid coral;
-        padding: 1rem 1rem;
+        border: $border-sm;
+        padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
+    
+        .row {
+            width: 12rem;
+        }
+    
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
     }
     
     .h4 {
@@ -2683,11 +2979,20 @@ section .at-cliente {
     }
     
     .registro {
-        border: 4px solid coral;
+        border: $border-sm;
         padding: 2rem 3rem;
         background-color: rgba(0,0,0,0.50);
         border-radius: 15px;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
+
+        .row {
+            width: 12rem;
+        }
+
+        button{
+            background-color: coral;
+            width: 8rem;
+        }
     }
 }
