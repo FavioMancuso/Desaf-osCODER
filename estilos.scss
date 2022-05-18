@@ -51,6 +51,26 @@ header .encabezado .desc u {
     color: coral;
 }
 
+.breadcrumb {
+    margin-top: 1rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgb(34, 32, 32);
+    font-weight: 600;
+}
+
+.breadcrumb a { 
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    color: rgb(34, 32, 32)
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
 .container img {
     margin-right: 1rem;
 }
@@ -69,7 +89,10 @@ header h2 a {
 
 header {
     height: auto;
-    padding: 0rem 0rem 0.65rem 0rem;
+}
+
+.header-home {
+    padding-bottom: 0.65rem;
 }
 
 #login {
@@ -166,7 +189,6 @@ header h2 a:hover {
 
 .prod {
     margin: 1rem auto;
-    margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 15.625rem);
     grid-template-rows: repeat(2, 15.625rem);
@@ -346,8 +368,8 @@ header h2 a:hover {
 
 
 footer {
-    background-image: url(./img/fondo3.jpg);
-    background-size: contain;
+    background-image: url(./img/fondo6.jpg);
+    background-size: initial;
     height: 2cm;
     width: 100%;
     justify-content: center;
@@ -409,14 +431,11 @@ $gradiente: (
     height: auto;
     width: 100%;
     background-image: url(./img/fondo6.jpg);
-}
-
-#galeria {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 1cm;
-} 
+    padding-bottom: 2rem;
+}
 
 .nav-galeria .nav-galeria--menu {
     width: auto;
@@ -869,7 +888,7 @@ $gradiente: (
     height: auto;
     width: 100%;
     background-image: url(./img/fondo6.jpg);
-    padding-bottom: 3rem;
+    padding-bottom: 2.25rem;
 }
 
 #nosotros nav {
@@ -974,6 +993,7 @@ section .at-cliente {
     justify-content: center;
     align-items: center;
     padding: 3rem;
+    padding-bottom: 1rem;
 }
 
 .form-signin {
@@ -1016,7 +1036,8 @@ section .at-cliente {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
+    padding-bottom: 0.5rem;
 }
 
 #faq .preguntas, #faq .consulta {
