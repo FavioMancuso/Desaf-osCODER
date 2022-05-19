@@ -431,12 +431,46 @@ $gradiente: (
     height: auto;
     width: 100%;
     background-image: url(./img/fondo6.jpg);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 2rem;
 }
 
+.modal-open {
+    padding-right: 0;
+}
+
+.galeria-title {
+    align-items: center;
+    padding-top: 2rem;
+
+    p {
+        color: white;
+        text-align: center;
+    }
+
+    .principal {
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        span {
+            color: coral;
+            text-decoration: underline;
+        }
+    }
+
+    .sub {
+        padding-top: 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color:white;
+        text-decoration: underline;
+    }
+}
+
+#galeria-md {
+    display: none;
+}
+
+/*
 .nav-galeria .nav-galeria--menu {
     width: auto;
     height: auto;
@@ -586,6 +620,7 @@ $gradiente: (
     background-image: url("img/escritorio2.jpg");
     background-position: bottom;
     background-size: cover;
+    height: 200px;
 }
 
 #esc2 {
@@ -881,6 +916,7 @@ $gradiente: (
     background-position: center;
     background-size: cover;
 }
+*/
 
 // Nosotros //
 
@@ -1229,6 +1265,48 @@ section .at-cliente {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    #galeria-lg {
+        display: none;
+    }
+    #galeria-md {
+        display: flex;
+        justify-content: center;
+    }
+    #galeria-sm {
+        display: none;
+    }
+
+    .galeria-title {
+        align-items: center;
+        padding-top: 2rem;
+    
+        p {
+            color: white;
+            text-align: center;
+        }
+    
+        .principal {
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+            span {
+                color: coral;
+                text-decoration: underline;
+            }
+        }
+    
+        .sub {
+            padding-top: 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color:white;
+            text-decoration: underline;
+        }
+    }
+}
+
 @media only screen and (max-width: 905px) {    
     .d-block {
     height: 450px;
@@ -1390,6 +1468,43 @@ section .at-cliente {
         border-radius: 50%;
         box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0,0,0,0.50);
         transition: initial;
+    }
+
+    #galeria-sm {
+        display: flex;
+    }
+
+    #galeria-lg, #galeria-md {
+        display: none;
+    }
+
+    .galeria-title {
+        align-items: center;
+        padding-top: 2rem;
+    
+        p {
+            color: white;
+            text-align: center;
+        }
+    
+        .principal {
+            font-size: 1.4rem;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+            span {
+                color: coral;
+                text-decoration: underline;
+            }
+        }
+    
+        .sub {
+            padding-top: 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color:white;
+            text-decoration: underline;
+        }
     }
 
     .nav-galeria .nav-galeria--menu {
@@ -1980,6 +2095,46 @@ section .at-cliente {
     }
 }
 
+@media only screen and (max-width: 576px) {
+    #galeria-lg, #galeria-md, #galeria-sm {
+        display: none;
+    }
+
+    #galeria-xsm {
+        display: flex;
+    }
+
+    .galeria-title {
+        align-items: center;
+        padding-top: 2rem;
+    
+        p {
+            color: white;
+            text-align: center;
+        }
+    
+        .principal {
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+            span {
+                color: coral;
+                text-decoration: underline;
+            }
+        }
+    
+        .sub {
+            padding-top: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color:white;
+            text-decoration: underline;
+        }
+    }
+}
+
+
 @media only screen and (max-width: 480px) {
     header .container-fluid h1 {
         font-size: 0.7rem;
@@ -2120,7 +2275,6 @@ section .at-cliente {
         transition: initial;
     }
 
-    
     #galeria {
         display: flex;
         flex-direction: column;
@@ -2413,12 +2567,47 @@ section .at-cliente {
         margin-right: .75rem;
     }
 
+    #galeria-lg, #galeria-md, #galeria-xsm {
+        display: none;
+    }
+
+    #galeria-sm {
+        display: flex;
+    }
+
+    .galeria-title {
+        align-items: center;
+        padding-top: 2rem;
+    
+        p {
+            color: white;
+            text-align: center;
+        }
+    
+        .principal {
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+            span {
+                color: coral;
+                text-decoration: underline;
+            }
+        }
+    
+        .sub {
+            padding-top: 0;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color:white;
+            text-decoration: underline;
+        }
+    }
+
     #ubicacion iframe {
         height: 19rem;
         width: 20rem;
     }
-
-
 
     .sec-nosotros table {
         font-size: 0.8rem;
@@ -2561,7 +2750,11 @@ section .at-cliente {
     }
     
     header .container-fluid h1 {
-        font-size: 0.7rem;
+        font-size: 0.7r
+        
+        
+        
+        em;
     }
 
     .d-block {
