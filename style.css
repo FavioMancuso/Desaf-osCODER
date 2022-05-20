@@ -423,7 +423,7 @@ footer {
   text-decoration: underline;
 }
 
-#galeria-md {
+#galeria-md, #galeria-sm, #galeria-xsm {
   display: none;
 }
 
@@ -1255,45 +1255,6 @@ section .at-cliente {
     margin-right: 6.5rem;
   }
 
-  .nav-galeria .nav-galeria--menu {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 10rem);
-    grid-template-rows: repeat(9, 3rem);
-    color: white;
-    text-align: center;
-    margin-left: 3rem;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-
-  .item {
-    padding: 12px;
-    grid-column: 1/2;
-  }
-
-  #galeria #contenedor-escritorio, #galeria #contenedor-placard, #galeria #contenedor-alacena, #galeria #contenedor-isla, #galeria #contenedor-escalera, #galeria #contenedor-comoda, #galeria #contenedor-barra, #galeria #contenedor-rack {
-    display: grid;
-    grid-template-areas: "img1 img1 img2 img2" "img3 img3 img2 img2" "img3 img3 img4 img4" "img5 img5 img4 img4" "img5 img5 img6 img6";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 250px 75px 250px 75px 250px;
-    grid-gap: 10px;
-    padding-inline-start: 3rem;
-    padding-inline-end: 1.5cm;
-    padding-block-start: 1cm;
-    padding-block-end: 0cm;
-  }
-
-  .hr {
-    margin-top: 0.9cm;
-    margin-bottom: 0.4cm;
-    width: 84%;
-    margin-left: 3.05rem;
-    color: #fff;
-  }
-
   .btn__redes a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -1439,37 +1400,6 @@ section .at-cliente {
     font-weight: 600;
     color: white;
     text-decoration: underline;
-  }
-
-  .nav-galeria .nav-galeria--menu {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 10rem);
-    grid-template-rows: repeat(9, 3rem);
-    color: white;
-    text-align: center;
-    margin-left: 3rem;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-
-  .item {
-    padding: 12px;
-    grid-column: 1/2;
-  }
-
-  #galeria #contenedor-escritorio, #galeria #contenedor-placard, #galeria #contenedor-alacena, #galeria #contenedor-isla, #galeria #contenedor-escalera, #galeria #contenedor-comoda, #galeria #contenedor-barra, #galeria #contenedor-rack {
-    display: grid;
-    grid-template-areas: "img1 img1 img1" "img2 img2 img2" "img3 img3 img3" "img4 img4 img4" "img5 img5 img5" "img6 img6 img6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px 250px 250px 250px 250px;
-    grid-gap: 10px;
-    padding-inline-start: 3rem;
-    padding-inline-end: 1.5cm;
-    padding-block-start: 1cm;
-    padding-block-end: 0cm;
   }
 
   .sec-nosotros h5 {
@@ -1619,6 +1549,10 @@ section .at-cliente {
   }
 }
 @media only screen and (max-width: 660px) {
+  .breadcrumb li {
+    font-size: 0.9rem;
+  }
+
   .d-block {
     height: 380px;
   }
@@ -1896,33 +1830,6 @@ section .at-cliente {
     transition: initial;
   }
 
-  .nav-galeria .nav-galeria--menu {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 7rem);
-    grid-template-rows: repeat(9, 2.9rem);
-    color: white;
-    text-align: center;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-
-  .item {
-    padding: 12px;
-    grid-column: 1/2;
-  }
-
-  .hr {
-    margin-top: 1cm;
-    margin-bottom: 0cm;
-    width: 73%;
-    margin-left: 3.05rem;
-    color: #fff;
-  }
-
   .buttons-redes a {
     font-size: 1rem;
     height: 2rem;
@@ -2167,91 +2074,6 @@ section .at-cliente {
     border-radius: 50%;
     box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.5);
     transition: initial;
-  }
-
-  #galeria {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nav-galeria .nav-galeria--menu {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    color: white;
-    text-align: center;
-    margin: 1rem;
-    margin-right: 3.5rem;
-    font-size: 0.8rem;
-  }
-
-  .item {
-    padding: 0.5rem;
-    padding-bottom: 0.2rem;
-  }
-
-  .item1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .item2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .item3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-
-  .item4 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .item5 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .item6 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-
-  .item7 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .item8 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  .bottom {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-
-  .nav-galeria {
-    position: sticky;
-    top: 4.2cm;
-  }
-
-  #galeria #contenedor-escritorio, #galeria #contenedor-placard, #galeria #contenedor-alacena, #galeria #contenedor-isla, #galeria #contenedor-escalera, #galeria #contenedor-comoda, #galeria #contenedor-barra, #galeria #contenedor-rack {
-    display: grid;
-    grid-template-areas: "img1 img1 img1" "img2 img2 img2" "img3 img3 img3" "img4 img4 img4" "img5 img5 img5" "img6 img6 img6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px 250px 250px 250px 250px;
-    grid-gap: 10px;
-    padding-inline-start: 3rem;
-    padding-inline-end: 1.5cm;
-    padding-block-start: 1cm;
-    padding-block-end: 0cm;
   }
 
   .buttons-redes a {
@@ -2619,6 +2441,10 @@ section .at-cliente {
   }
 }
 @media only screen and (max-width: 380px) {
+  .breadcrumb li {
+    font-size: 0.8rem;
+  }
+
   header .container-fluid {
     height: 3rem;
   }
@@ -2701,19 +2527,6 @@ section .at-cliente {
     border-radius: 50%;
     box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.5);
     transition: initial;
-  }
-
-  .nav-galeria .nav-galeria--menu {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    color: white;
-    text-align: center;
-    margin: 1rem;
-    margin-right: 3.5rem;
-    font-size: 0.7rem;
   }
 
   #nosotros nav h3 .principal {
@@ -2857,6 +2670,10 @@ section .at-cliente {
   }
 }
 @media only screen and (max-width: 320px) {
+  .breadcrumb li {
+    font-size: 0.7rem;
+  }
+
   header .container-fluid {
     height: 3rem;
   }
@@ -2908,36 +2725,6 @@ section .at-cliente {
 
   .g-5, .gx-5 {
     --bs-gutter-x: 0rem;
-  }
-
-  .nav-galeria .nav-galeria--menu {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    color: white;
-    text-align: center;
-    margin: 1rem auto;
-    margin-right: 3.5rem;
-    font-size: 0.7rem;
-  }
-
-  #galeria #contenedor-escritorio, #galeria #contenedor-placard, #galeria #contenedor-alacena, #galeria #contenedor-isla, #galeria #contenedor-escalera, #galeria #contenedor-comoda, #galeria #contenedor-barra, #galeria #contenedor-rack {
-    display: grid;
-    grid-template-areas: "img1 img1 img1" "img2 img2 img2" "img3 img3 img3" "img4 img4 img4" "img5 img5 img5" "img6 img6 img6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px;
-    grid-gap: 10px;
-    padding-inline-start: 1cm;
-    padding-inline-end: 1cm;
-    padding-block-start: 0.5cm;
-    padding-block-end: 0cm;
-  }
-
-  .nav-galeria {
-    position: sticky;
-    top: 4.6cm;
   }
 
   #HOME {
