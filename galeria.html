@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Muebles a medida - Placard - Escritorio - Alacena - Melamina MFD -Descuentos en efectivo - Envíos gratis">
+    <meta name="keywords" content="Muebles a medida, Placard, Escritorio, Alacena, Melamina MFD, Descuentos en efectivo, Envíos gratis">
     <meta name="description" content="ADHOC muebles - Diseño y confección de muebles a medida. Creamos y recreamos experiencias para el usuario. Nos comprometemos con el detalle y la calidad del producto con larga experiencia y preparación.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -13,76 +13,191 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid bg-dark">
-        <h1 class="encabezado">
-            <p class="desc fw-bold text-center"><i>10% de descuento + Envío gratis <u>ABONANDO EN EFECTIVO</u></i></p>
-        </h1>
-        </div>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
-                    <a href="index.html"><img src="img/adhoc-logo.jpg" alt="" width="120px" height="90px"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <div class="container-fluid" style="background-color: black;">
+            <h1 class="encabezado">
+                <p class="desc fw-bold text-center"><i>10% de descuento + Envío gratis <u>ABONANDO EN EFECTIVO</u></i></p>
+            </h1>
+            </div>
+            <div id="navbar-home" class="container">
+                <nav class="navbar navbar-expand-lg" style="background-color: black;">
+                    <div class="container">
+                        <a href="index.html"><img src="img/adhoc-logo.jpg" alt="" width="120px" height="90px"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="bi bi-chevron-double-down" style="color: grey;"></i></span>
+                        </button>
+                    <div class="collapse navbar-collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 fw-bold" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="nosotros.html" id="navbarScrollingDropdown">
+                            Nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="galeria.html" id="navbarScrollingDropdown">
+                            Galería
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="faq.html" id="navbarScrollingDropdown">
+                            FAQs
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-dark text-white" href="contacto.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contacto
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="contacto.html">Mi perfil</a></li>
+                                <li><a class="dropdown-item" href="contacto.html">Agregar cuenta</a></li>
+                                <li><a class="dropdown-item" href="contacto.html">Ajustes</a></li>
+                                <li><a class="dropdown-item" href="contacto.html">Notificaciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="d-flex" >
+                    <form id="login" class="">
+                        <h2 class="h2"><a href="contacto.html">Iniciar sesión</a> | <a href="contacto.html">Registrate</a></h2>
+                    </form>
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Carrito
+                        <span class="badge ms-1 rounded-pill">0</span>
                     </button>
-                <div class="collapse navbar-collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 fw-bold" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-white" href="nosotros.html" id="navbarScrollingDropdown">
-                        Nosotros
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-white" href="galeria.html" id="navbarScrollingDropdown">
-                        Galería
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-white" href="faq.html" id="navbarScrollingDropdown">
-                        FAQs
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="contacto.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Contacto
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="contacto.html">Mi perfil</a></li>
-                            <li><a class="dropdown-item" href="contacto.html">Agregar cuenta</a></li>
-                            <li><a class="dropdown-item" href="contacto.html">Ajustes</a></li>
-                            <li><a class="dropdown-item" href="contacto.html">Notificaciones</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="d-flex" >
-                <form id="login" class="">
-                    <h2 class="h2"><a href="contacto.html">Iniciar sesión</a> | <a href="contacto.html">Registrate</a></h2>
-                </form>
-                <button class="btn btn-outline-light" type="submit">
-                    <i class="bi-cart-fill me-1"></i>
-                    Carrito
-                    <span class="badge ms-1 rounded-pill">0</span>
-                </button>
-                </ul>
-                </div>
-                </div>
-            </nav>
-        </div>
-        <div class="container col-sm-12">
+                    </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        <div class="container col-sm-12" id="breadcrumb">
             <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item" aria-current="page"><a href="">Nosotros</a></li>
-                    <li class="breadcrumb-item active text-dark" aria-current="page">Galería</li>
+                    <li class="breadcrumb-item active text-dark aria-current="page">Galería</li>
                 </ol>
             </nav>
         </div>
     </header>      
+    <div style="background-image: url(./img/circle-scatter-haikei.svg);">
     <main id="galeria">   
         <section class="galeria-title">
             <p class="principal mb-2">Bienvenidxs a <span>Galería ADHOC</span></p>
             <p class="sub">Conocé nuestros articulos más populares</p>
         </section>
+        <section class="py-4">
+            <h3 class="h3 text-center">¡Lo más vendido!</h3>
+            <div class="container mt-4">
+                <div class="row gx-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img" src="img/placard3.jpg" alt="comoda-mdf"/>
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Placard - Puerta tradicional</h5>
+                                    $70.000 - $120.000 <br> (Varía según tamaño)
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Más info</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+                            <img class="card-img" src="img/escritorio4.jpg" alt="escritorio-mdf"/>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Escritorio + Cajonera</h3>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <span class="text-muted text-decoration-line-through">$110.000</span>
+                                    $93.000
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+                            <img class="card-img" src="img/placard6.jpg" alt="placard-mdf"/>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Vestidor - Blanco MDF</h5>
+                                    <span class="text-muted text-decoration-line-through">$250.000</span>
+                                    $215.000 <br> (Varía según tamaño)
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Más info</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img" src="img/placard10.jpg" alt="placard-mdf"/>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Placard - Espejo corredizo</h5>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    $270.000
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+                            <img class="card-img-top" src="img/rack10.jpg" alt="rack-mdf"/>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Rack TV</h5>
+                                    <span class="text-muted text-decoration-line-through">$65.000</span>
+                                    $55.000
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="img/isla10.jpg" alt="isla-mdf"/>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Isla - Rauvisio</h5>
+                                    $380.000 - $530.000 <br> (Varía según tamaño)
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Más info</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sub-sub">
+            <p>Otros articulos...</p>
+        </div>
         <div id="galeria-lg" class="row p-5 pb-0 pt-2">
             <div class="col-lg-4 mb-4">
                 <a href="" data-bs-toggle="modal" data-bs-target="#modalImage1">
@@ -132,7 +247,7 @@
             </div>
             <div class="col-md-5 mb-4">
                 <img class="w-100 mb-4 rounded" src="./img/escalera4.jpg" alt="Escritorio Adhoc - Modal">
-                <img class="w-100 mb-4 rounded" src="./img/placard20.jpg" alt="Escritorio Adhoc - Modal">
+                <img class="w-100 mb-4 rounded" src="./img/placard20.jpg"Escritorio Adhoc - Modal">
                 <a href="" data-bs-toggle="modal" data-bs-target="#modalImage1">
                     <img class="w-100 mb-4 rounded" src="./img/alacena4.jpg" alt="Escritorio Adhoc - Modal">
                 </a>
@@ -202,13 +317,19 @@
             </div>
         </div>
         
-        <!-- <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade pr-0" id="modalImage1">
-            <div class="modal-dialog modal-lg modal-dialog-centered pr-0">
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1" aria-hidden="true">
+            <div class="modal-dialog modal modal-dialog-centered">
                 <div class="modal-content">
-                    <img src="img/escritorio2.jpg" alt="Escritorio Adhoc - Modal">
+                    <div class="modal-header d-flex justify-content-between align-items-center">
+                        <p class="p m-0">ESCRITORIO MODERNO (MDF blanco - Placa doble)</p>
+                        <button type="button" class="btn-close align-self-end p-0 m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="img/escritorio2.jpg" alt="Escritorio Adhoc - Modal" width="100%">
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     
     </main>
     <footer>
@@ -221,6 +342,7 @@
             <a href="#" class="btn__redes--telephone"><i class="bi bi-telephone-fill"></i></a>
         </section>
     </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
