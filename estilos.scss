@@ -99,14 +99,9 @@ header h2 a:hover {
     color: coral;
 }
 
-.dropdown-menu {
-    color: black;
-    background: darkgrey;
-}
-
-.dropdown-item:hover {
-    background-color: coral;
-    color: white;
+header .nav-link:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .d-flex {
@@ -489,10 +484,10 @@ $gradiente: (
 #nosotros nav h3{
     height: auto;
     width: 25rem;
-    background-color: rgba(255, 255, 255, 0.726);
+    background-color: rgba(39, 39, 39, 0.5);
     text-align: center;
-    border: $border-lg;
-    box-shadow: $box-shadow-lg;
+    border: $border-md;
+    //box-shadow: $box-shadow-lg;
     border-radius: 10px;
     margin-bottom: 3rem;
 }
@@ -501,13 +496,13 @@ $gradiente: (
     font-size: 1.2rem;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
 }
 
 #nosotros nav h3 ul {
-    color: black;
+    color: white;
     font-size: medium;
     align-items: center;
     padding-top: 1.3rem;
@@ -516,10 +511,10 @@ $gradiente: (
 
 #nosotros nav .definicion{
     width: auto;
-    border: $border-lg;
-    box-shadow: $box-shadow-lg;
+    border: $border-md;
+    // box-shadow: $box-shadow-lg;
     border-radius: 10px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(39, 39, 39, 0.5);
     padding: 15px;
     font-size: large;
     font-weight: 500;
@@ -549,6 +544,7 @@ $gradiente: (
     color: white;
     text-transform: uppercase;
     text-align: center;
+    background: black;
 }
 section .at-cliente {
     height: auto;
@@ -588,9 +584,8 @@ section .at-cliente {
 .form-signin {
     border: $border-lg;
     padding: 2rem 3rem;
-    background-color: rgba(0,0,0,0.50);
+    background-color: rgba(39, 39, 39, 0.5);
     border-radius: 15px;
-    box-shadow: $box-shadow-lg;
     margin-bottom: 1.5rem;
 
     .row {
@@ -608,7 +603,8 @@ section .at-cliente {
 }
 
 .h4 u {
-    color: rgb(77, 206, 77);
+    color: rgb(0, 136, 182);
+    background: black;
 }
 
 .registro {
@@ -966,16 +962,10 @@ section .at-cliente {
     }
     
     .btn__redes a {
-        text-decoration: none;
         font-size: 1.3rem;
         height: 2.2rem;
         width: 2.2rem;
         line-height: 2.2rem;
-        text-align: center;
-        color: #fff;
-        border-radius: 50%;
-        box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0,0,0,0.50);
-        transition: initial;
     }
 
     #galeria-sm {
@@ -1131,9 +1121,8 @@ section .at-cliente {
     .form-signin {
         border: $border-lg;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-lg;
         margin-bottom: 1.5rem;
     
         .row {
@@ -1157,9 +1146,8 @@ section .at-cliente {
     .registro {
         border: $border-lg;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-lg;
         margin-bottom: 1.5rem;
 
         .row {
@@ -1350,9 +1338,8 @@ section .at-cliente {
     .form-signin {
         border: $border-md;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
     
         .row {
@@ -1376,9 +1363,8 @@ section .at-cliente {
     .registro {
         border: $border-md;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
 
         .row {
@@ -1420,19 +1406,6 @@ section .at-cliente {
 
     .g-5, .gx-5 {
         --bs-gutter-x: 1rem;
-    }
-    
-    .btn__redes a {
-        text-decoration: none;
-        font-size: 1.2rem;
-        height: 2.1rem;
-        width: 2.1rem;
-        line-height: 2.1rem;
-        text-align: center;
-        color: #fff;
-        border-radius: 50%;
-        box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0,0,0,0.50);
-        transition: initial;
     }
 
     .buttons-redes a {
@@ -1477,9 +1450,8 @@ section .at-cliente {
     .form-signin {
         border: $border-md;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
     
         .row {
@@ -1503,9 +1475,8 @@ section .at-cliente {
     .registro {
         border: $border-md;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
 
         .row {
@@ -1686,19 +1657,6 @@ section .at-cliente {
         @include sizes (16rem, 16rem, relative, hidden, 0.375rem, 0rem 0.9375rem 1.5625rem rgba(0,0,0,0.50), pointer);
     }
 
-    .btn__redes a {
-        text-decoration: none;
-        font-size: 1.2rem;
-        height: 2.1rem;
-        width: 2.1rem;
-        line-height: 2.2rem;
-        text-align: center;
-        color: #fff;
-        border-radius: 50%;
-        box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0,0,0,0.50);
-        transition: initial;
-    }
-
     .buttons-redes a {
         font-size: 1.1rem;
         height: 2rem;
@@ -1833,9 +1791,8 @@ section .at-cliente {
     .form-signin {
         border: $border-md;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
     
         .row {
@@ -1859,9 +1816,8 @@ section .at-cliente {
     .registro {
         border: $border-md;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
 
         .row {
@@ -2040,9 +1996,8 @@ section .at-cliente {
     .form-signin {
         border: $border-md;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
     
         .row {
@@ -2066,9 +2021,8 @@ section .at-cliente {
     .registro {
         border: $border-md;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-md;
         margin-bottom: 1.5rem;
 
         .row {
@@ -2109,8 +2063,8 @@ section .at-cliente {
 
     .py-4 {    
         h3 {
-            font-size: small;
-            font-weight: 700;
+            font-size: medium;
+            font-weight: 900;
             text-transform: uppercase;
             width: 100%;
             padding-top: 2rem;
@@ -2165,16 +2119,10 @@ section .at-cliente {
     }
 
     .btn__redes a {
-        text-decoration: none;
         font-size: 1.1rem;
         height: 2rem;
         width: 2rem;
-        line-height: 1.9rem;
-        text-align: center;
-        color: #fff;
-        border-radius: 50%;
-        box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0,0,0,0.50);
-        transition: initial;
+        line-height: 2rem;
     }
 
     #nosotros nav h3 .principal {
@@ -2280,9 +2228,8 @@ section .at-cliente {
     .form-signin {
         border: $border-sm;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
     
         .row {
@@ -2306,9 +2253,8 @@ section .at-cliente {
     .registro {
         border: $border-sm;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
 
         .row {
@@ -2337,7 +2283,7 @@ section .at-cliente {
 
     .py-4 {    
         h3 {
-            font-size: small;
+            font-size: x-large;
             font-weight: 700;
             text-transform: uppercase;
             width: 100%;
@@ -2530,9 +2476,8 @@ section .at-cliente {
     .form-signin {
         border: $border-sm;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
     
         .row {
@@ -2556,9 +2501,8 @@ section .at-cliente {
     .registro {
         border: $border-sm;
         padding: 2rem 3rem;
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(39, 39, 39, 0.5);
         border-radius: 15px;
-        box-shadow: $box-shadow-sm;
         margin-bottom: 1.5rem;
 
         .row {
