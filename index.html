@@ -52,7 +52,7 @@
                 <form id="login" class="">
                     <h2 class="h2"><a href="contacto.html">Iniciar sesión</a> | <a href="contacto.html">Registrate</a></h2>
                 </form>
-                <button class="btn btn-outline-light" type="submit">
+                <button class="btn btn-car btn-outline-light" type="submit">
                     <i class="bi-cart-fill me-1"></i>
                     Carrito
                     <span class="badge ms-1 rounded-pill">0</span>
@@ -63,7 +63,7 @@
             </nav>
         </div>
     </header>    
-    <div style="background-image: url(./img/circle-scatter-haikei.svg);">
+    <div style="background-color: black;">
         <main id="HOME">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -92,7 +92,7 @@
             </button>
             </div>
         <nav class="navegacion pt-5">
-            <p id="productos">PRODUCTOS</p>
+            <p class="h8" id="productos">PRODUCTOS</p>
         </nav>
         <section class="prod">
             <article class="escritorio">
@@ -167,15 +167,61 @@
                 </figure>
             </article>
         </section>
+        <section id="payment" class="container">
+            <div class="mediosdepago"  style="background-color: black;">
+                <p class="mediosdepago-title h8 py-3">Medios de pago</p>
+                <div class="container-fluid">
+                <div class="row gx-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">Nombre del Titular</p>
+                            <input class="form-control mb-3" type="text" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">Numero de la Tarjeta</p>
+                            <input class="form-control mb-3" type="text" placeholder="1234 5678 4356 6878">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">Vencimiento</p>
+                            <input class="form-control mb-3" type="text" placeholder="MM/AAAA">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">CVV</p>
+                            <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-between mb-3">
+                            <img src="./img/vi.png" alt="Tarjeta">
+                            <img src="./img/pp.png" alt="Tarjeta">
+                            <img src="./img/mc.png" alt="Tarjeta">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn btn-primary mb-1">
+                            <span class="ps-3">Confirmar pago</span>
+                            <span class="fas fa-arrow-right mx-3"><i class="bi bi-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <section class="btn__redes">
-            <a href="#" class="btn__redes--instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="btn__redes--facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="btn__redes--linkedin"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="btn__redes--whatsapp"><i class="bi bi-whatsapp"></i></a>
-            <a href="#" class="btn__redes--location"><i class="bi bi-geo-alt-fill"></i></a>
-            <a href="#" class="btn__redes--telephone"><i class="bi bi-telephone-fill"></i></a>
+            <a href="https://www.instagram.com/coderhouse/?hl=es" class="btn__redes--instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://es-la.facebook.com/Coderhouse/" class="btn__redes--facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/school/coderhouse/?originalSubdomain=ar" class="btn__redes--linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://web.whatsapp.com/" class="btn__redes--whatsapp"><i class="bi bi-whatsapp"></i></a>
+            <a href="nosotros.html#ubicacion" class="btn__redes--location"><i class="bi bi-geo-alt-fill"></i></a>
+            <a href="nosotros.html#tel" class="btn__redes--telephone"><i class="bi bi-telephone-fill"></i></a>
         </section>
     </footer>
     </div>

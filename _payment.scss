@@ -1,0 +1,269 @@
+#payment {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+
+    .mediosdepago {
+        max-width: 500px;
+        margin: auto;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .mediosdepago-title {
+        margin: 0px;
+        font-size: x-large;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .container-fluid {
+        border: $border-lg;
+        border-radius: 10px;
+        padding: 3rem;
+        background-color: rgba(39, 39, 39, 0.5);
+    }
+    
+    .btn-primary {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        background-image: linear-gradient(to right, rgb(34, 128, 65) 0%, rgb(8, 90, 35) 51%, rgb(9, 80, 33) 100%);
+        border: none;
+        transition: 0.5s;
+        background-size: 200% auto;
+    
+    }
+    
+    
+    .btn-primary:hover {
+        background-position: right center;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    
+    
+    .btn.btn-primary:hover .fas.fa-arrow-right {
+        transform: translate(15px);
+        transition: transform 0.2s ease-in;
+    }
+    
+    .form-control {
+        color: white;
+        background-color: rgb(209, 98, 58);
+        border: 2px solid transparent;
+        height: 60px;
+        padding-left: 20px;
+        vertical-align: middle;
+    }
+    
+    .form-control:focus {
+        color: white;
+        background-color: rgb(175, 83, 49);
+        border: 2px solid rgb(97, 44, 24);
+        box-shadow: none;
+    }
+    
+    .text {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .col-12 {
+
+        .d-flex { 
+            align-content: center;
+        }
+
+        img {
+            height: 4rem;
+            width: auto;
+            margin-right: 0;
+        }
+    }
+
+    ::placeholder {
+        font-size: 14px;
+        font-weight: 600;
+        color: darkgray;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #payment .mediosdepago-title {
+        font-size: large;
+        font-weight: 900;
+    }
+
+    .mediosdepago .container-fluid {
+        padding: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #payment {
+
+        .container-fluid {
+            padding: 2rem;
+        }
+        
+        .btn-primary {
+            height: 50px;
+        }
+
+        .form-control {
+            height: 50px;
+        }
+        
+        .col-12 {
+    
+            img {
+                height: 3.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #payment {
+
+        .container-fluid {
+            padding: 1.7rem;
+            width: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #payment {
+
+        .mediosdepago-title {
+            font-size: medium;
+        }
+
+        .container-fluid {
+            padding: 1.5rem;
+            width: 70%;
+        }
+
+        .btn-primary {
+            height: 46px;
+        }
+
+        .form-control {
+            height: 46px;
+            font-size: small;
+        }
+        
+        .text {
+            font-size: small;
+        }
+
+        .col-12 {
+    
+            img {
+                height: 3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #payment {
+
+        .mediosdepago-title {
+            font-size: medium;
+        }
+
+        .container-fluid {
+            padding: 1.5rem;
+            width: 75%;
+            border: $border-sm;
+            background-color: rgba(39, 39, 39, 0.5);
+        }
+
+        .btn-primary {
+            height: 45px;
+            font-size: 0.8rem;
+        }
+
+        .form-control {
+            height: 45px;
+            padding-left: 1rem;
+        }
+        
+        .text {
+            font-size: small;
+        }
+
+        ::placeholder {
+            font-size: 11px;
+        }
+        
+        .col-12 {
+    
+            img {
+                height: 2.5rem;
+            }
+
+            
+        }
+
+        .d-flex {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #payment {
+
+        .mediosdepago-title {
+            font-size: small;
+        }
+
+        .container-fluid {
+            padding: 1rem;
+            width: 90%;
+        }
+
+        .btn-primary {
+            height: 45px;
+            font-size: small;
+        }
+
+        .form-control {
+            height: 45px;
+            padding-left: 0.6rem;
+        }
+        
+        .text {
+            font-size: 0.75rem;
+        }
+        
+        ::placeholder {
+            font-size: 11px;
+        } 
+        
+        .col-12 {
+    
+            img {
+                height: 2.5rem;
+            }          
+        }
+
+        .d-flex {
+            align-items: flex-start;
+        }
+    }
+}

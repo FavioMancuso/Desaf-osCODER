@@ -75,29 +75,29 @@
             </nav>
         </div>
     </header>  
-    <div style="background-image: url(./img/circle-scatter-haikei.svg);">
+    <div style="background-color: black;">
     <main id="form">
-        <section class="form-signin">
+        <section class="form-signin" style="background-color: rgb(10, 10, 10);">
             <h1 class="h3 mb-5 text-white text-center">Iniciar sesión</h1>
-            <form class="row g-3 text-white justify-content-center" action="enviar.php">
+            <form class="row g-3 text-white justify-content-center" action="enviar.php" name="contactoFormulario" method="post">
                 <div class="col-md-12 text-white">
                     <label for="validationDefault03" class="form-label">Correo o usuario</label>
-                    <input type="mail" class="form-control" id="validationDefault03" required placeholder="usuario@ejemplo.com">
+                    <input type="mail" class="form-control" id="validationDefault03" required placeholder="usuario@ejemplo.com" name="usuario">
                 </div>
                 <div class="col-md-12 text-white">
                     <label for="validationDefault03" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="validationDefault03" required placeholder="*********">
+                    <input type="password" class="form-control" id="validationDefault03" required placeholder="*********" name="contraseña">
                 </div>
                 <div class="checkbox col-md-12 text-white">
                     <label>
-                    <input type="checkbox" value="remember-me"> Recordar contraseña
+                    <input type="checkbox" value="remember-me" name="recordar"> Recordar contraseña
                     </label>
                 </div>
-                <button class="btn btn-md text-center" type="submit">Ingresar</button>
-                </form>
+                <button class="btn btn-primary btn-md text-center" type="submit">Ingresar</button>
+            </form>
         </section>
         <h4 class="h4 text-white text-center">¿No tenes cuenta? <u>REGISTRATE</u></h4>
-        <section class="registro">
+        <section class="registro" style="background-color: rgb(10, 10, 10);">
         <h1 class="h3 mb-5 text-white text-center">Crear cuenta</h1>
         <form class="row g-3 text-white justify-content-center">
             <div class="col-md-4">
@@ -157,7 +157,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <button class="btn" type="submit">Crear cuenta</button>
+                <button class="btn btn-primary" type="submit">Crear cuenta</button>
             </div>
         </form>
         </section>

@@ -74,23 +74,24 @@
             </nav>
         </div>
     </header> 
-    <div style="background-image: url(./img/circle-scatter-haikei.svg);">
+    <div style="background-color: black;">
     <main id="faq">
         <section id="preg" class="preguntas">
             <h3 class="preguntas__title">Algunas preguntas frecuentes de nuestros clientes</h3>
             <p class="preg"><b><i>¿Como se confecciona el presupuesto final?</i></b></p>
                 <p class="resp">ADHOC: Todos nuestros presupuestos se confeccionan de la misma forma: Primero, se obtiene en un total gastado en materiales segun las preferencias de nuestro cliente. Luego, ese total gastado se duplica, quedando un presupuesto final de exactamente el doble del valor en materiales, por la logistica y la mano de obra.</p>
             <p class="preg"><b><i>¿Es posible enviar planos por PDF y así obtener un presupuesto sin cargo?</i></b></p>
-                <p class="resp">ADHOC: Sí. El mismo se envía a adhocmuebles@gmail.com y nosotros nos pondremos en contacto con usted una vez para acordar detalles.</p>
-            <p class="preg"><b><i>¿El presupuesto cubre la instalacion del mueble?</i></b></p>
-                <p class="resp">El presupuesto final cubre la instalacion del mueble como también el flete de traslado.</p>
+                <p class="resp">ADHOC: Sí. El mismo se envía a adhocmuebles@gmail.com y nosotros nos pondremos en contacto con usted para acordar detalles.</p>
+            <p class="preg"><b><i>¿El presupuesto cubre la instalación del mueble?</i></b></p>
+                <p class="resp">El presupuesto final cubre la instalación del mueble como también el flete de traslado.</p>
         </section>
         <section id="consulta" class="consulta">
-            <h3 class="consulta__title">Realiza tu propia constulta:</h3>
-            <form class="consul" action="enviar.php" method="post" enctype="text/plain">
-                <textarea class="consul-textarea" name="" id="" cols="30" rows="10" placeholder="Inrgesa tu comentario o consulta"></textarea>
+            <h3 class="consulta__title">Realiza tu propia consulta:</h3>
+            <form class="consul" action="faq.php" method="POST">
+                <input type="mail" class="form-control" id="validationDefault03" required placeholder="Nombre o Usuario" name="usuario">
+                <textarea class="consul-textarea" name="textarea" id="" cols="30" rows="10" placeholder="Inrgesa tu comentario o consulta"></textarea>
                 <br>
-                <input class="consul-enviar" type="button" value="Enviar">
+                <button class="btn mx-2" type="button">Enviar</button>
             </form>
         </section>
     </main>
